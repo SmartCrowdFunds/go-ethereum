@@ -61,7 +61,7 @@ class Footer extends Component<Props> {
 
 	render() {
 		const {classes, general} = this.props; // The classes property is injected by withStyles().
-		const gscf = general.version ? this.info('Geth', general.version) : null;
+		const gscf = general.version ? this.info('Gscf', general.version) : null;
 		const commit = general.commit ? this.info('Commit', general.commit.substring(0, 7)) : null;
 
 		return (

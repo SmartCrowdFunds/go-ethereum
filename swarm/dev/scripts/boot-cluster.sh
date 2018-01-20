@@ -38,9 +38,9 @@ BOOTNODE_PUBKEY="760c4460e5336ac9bbd87952a3c7ec4363fc0a97bd31c86430806e287b437fd
 BOOTNODE_URL="enode://${BOOTNODE_PUBKEY}@${BOOTNODE_IP}:${BOOTNODE_PORT}"
 
 # static gscf configuration
-GETH_IP="192.168.33.3"
-GETH_RPC_PORT="8545"
-GETH_RPC_URL="http://${GETH_IP}:${GETH_RPC_PORT}"
+GSCF_IP="192.168.33.3"
+GSCF_RPC_PORT="8545"
+GSCF_RPC_URL="http://${GSCF_IP}:${GSCF_RPC_PORT}"
 
 usage() {
   cat >&2 <<USAGE
@@ -164,12 +164,12 @@ start_gscf_node() {
     --unlock    "${address}"
     --password  "${dir}/password"
     --rpc
-    --rpcaddr   "${GETH_IP}"
-    --rpcport   "${GETH_RPC_PORT}"
+    --rpcaddr   "${GSCF_IP}"
+    --rpcport   "${GSCF_RPC_PORT}"
     --verbosity "6"
   )
 
-  start_node "gscf" "${GETH_IP}" "$(which gscf)" ${args[@]}
+  start_node "gscf" "${GSCF_IP}" "$(which gscf)" ${args[@]}
 }
 
 start_swarm_nodes() {
@@ -208,7 +208,7 @@ start_swarm_node() {
     --bootnodes    "${BOOTNODE_URL}"
     --datadir      "${dir}"
     --identity     "${name}"
-    --ens-api      "${GETH_RPC_URL}"
+    --ens-api      "${GSCF_RPC_URL}"
     --bzznetworkid "321"
     --bzzaccount   "${address}"
     --password     "${dir}/password"

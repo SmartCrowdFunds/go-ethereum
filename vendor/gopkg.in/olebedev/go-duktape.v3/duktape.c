@@ -8949,7 +8949,7 @@ DUK_INTERNAL_DECL duk_uint32_t duk_heap_hashstring(duk_heap *heap, const duk_uin
 #define DUK_DBG_CMD_DUMPHEAP             0x20
 #define DUK_DBG_CMD_GETBYTECODE          0x21
 #define DUK_DBG_CMD_APPREQUEST           0x22
-#define DUK_DBG_CMD_GETHEAPOBJINFO       0x23
+#define DUK_DBG_CMD_GSCFEAPOBJINFO       0x23
 #define DUK_DBG_CMD_GETOBJPROPDESC       0x24
 #define DUK_DBG_CMD_GETOBJPROPDESCRANGE  0x25
 
@@ -44454,7 +44454,7 @@ DUK_LOCAL void duk__debug_process_message(duk_hthread *thr) {
 			break;
 		}
 #if defined(DUK_USE_DEBUGGER_INSPECT)
-		case DUK_DBG_CMD_GETHEAPOBJINFO: {
+		case DUK_DBG_CMD_GSCFEAPOBJINFO: {
 			duk__debug_handle_get_heap_obj_info(thr, heap);
 			break;
 		}

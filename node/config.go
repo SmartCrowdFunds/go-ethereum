@@ -218,9 +218,9 @@ func DefaultWSEndpoint() string {
 // NodeName returns the devp2p node identifier.
 func (c *Config) NodeName() string {
 	name := c.name()
-	// Backwards compatibility: previous versions used title-cased "Geth", keep that.
+	// Backwards compatibility: previous versions used title-cased "Gscf", keep that.
 	if name == "gscf" || name == "gscf-testnet" {
-		name = "Geth"
+		name = "Gscf"
 	}
 	if c.UserIdent != "" {
 		name += "/" + c.UserIdent
@@ -245,7 +245,7 @@ func (c *Config) name() string {
 }
 
 // These resources are resolved differently for "gscf" instances.
-var isOldGethResource = map[string]bool{
+var isOldGscfResource = map[string]bool{
 	"chaindata":          true,
 	"nodes":              true,
 	"nodekey":            true,
@@ -263,7 +263,7 @@ func (c *Config) resolvePath(path string) string {
 	}
 	// Backwards-compatibility: ensure that data directory files created
 	// by gscf 1.4 are used if they exist.
-	if c.name() == "gscf" && isOldGethResource[path] {
+	if c.name() == "gscf" && isOldGscfResource[path] {
 		oldpath := ""
 		if c.Name == "gscf" {
 			oldpath = filepath.Join(c.DataDir, path)

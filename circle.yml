@@ -23,7 +23,7 @@ dependencies:
 
 test:
   override:
-    # Build Geth and move into a known folder
+    # Build Gscf and move into a known folder
     - make gscf
     - cp ./build/bin/gscf $HOME/gscf
 

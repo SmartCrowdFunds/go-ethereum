@@ -275,7 +275,7 @@ func Wait4(pid int, wstatus *WaitStatus, options int, rusage *Rusage) (int, erro
 
 //sys	gscfostname(buf []byte) (n int, err error)
 
-func Gethostname() (name string, err error) {
+func Gscfostname() (name string, err error) {
 	var buf [MaxHostNameLen]byte
 	n, err := gscfostname(buf[:])
 	if n != 0 {
