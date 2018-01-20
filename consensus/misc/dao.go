@@ -21,9 +21,9 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/core/state"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/core/types"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/params"
 )
 
 var (

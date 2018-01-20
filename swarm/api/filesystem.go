@@ -26,9 +26,9 @@ import (
 	"path/filepath"
 	"sync"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/swarm/storage"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/common"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/log"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/swarm/storage"
 )
 
 const maxParallelFiles = 5

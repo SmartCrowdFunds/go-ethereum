@@ -27,16 +27,16 @@ import (
 
 	goruntime "runtime"
 
-	"github.com/ethereum/go-ethereum/cmd/evm/internal/compiler"
-	"github.com/ethereum/go-ethereum/cmd/utils"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/core/vm/runtime"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/cmd/evm/internal/compiler"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/cmd/utils"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/common"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/core"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/core/state"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/core/vm"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/core/vm/runtime"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/ethdb"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/log"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/params"
 	cli "gopkg.in/urfave/cli.v1"
 )
 

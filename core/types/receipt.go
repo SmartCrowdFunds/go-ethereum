@@ -21,9 +21,9 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/common"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/common/hexutil"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/rlp"
 )
 
 //go:generate gencodec -type Receipt -field-override receiptMarshaling -out gen_receipt_json.go

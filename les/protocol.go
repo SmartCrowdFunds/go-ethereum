@@ -26,11 +26,11 @@ import (
 	"io"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/crypto/secp256k1"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/common"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/core"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/crypto"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/crypto/secp256k1"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/rlp"
 )
 
 // Constants to match up protocol versions and messages

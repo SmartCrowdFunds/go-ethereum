@@ -21,11 +21,11 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/math"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/crypto/bn256"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/common"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/common/math"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/crypto"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/crypto/bn256"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/params"
 	"golang.org/x/crypto/ripemd160"
 )
 

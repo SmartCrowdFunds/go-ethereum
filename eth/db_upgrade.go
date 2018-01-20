@@ -21,11 +21,11 @@ import (
 	"bytes"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/common"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/core"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/ethdb"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/log"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/rlp"
 )
 
 var deduplicateData = []byte("dbUpgrade_20170714deduplicateData")

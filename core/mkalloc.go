@@ -34,8 +34,8 @@ import (
 	"sort"
 	"strconv"
 
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/core"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/rlp"
 )
 
 type allocItem struct{ Addr, Balance *big.Int }

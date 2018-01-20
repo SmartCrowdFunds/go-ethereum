@@ -25,14 +25,14 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/mclock"
-	"github.com/ethereum/go-ethereum/event"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/p2p/discover"
-	"github.com/ethereum/go-ethereum/p2p/discv5"
-	"github.com/ethereum/go-ethereum/p2p/nat"
-	"github.com/ethereum/go-ethereum/p2p/netutil"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/common"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/common/mclock"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/event"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/log"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/p2p/discover"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/p2p/discv5"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/p2p/nat"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/p2p/netutil"
 )
 
 const (

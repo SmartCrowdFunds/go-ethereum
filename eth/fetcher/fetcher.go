@@ -22,10 +22,10 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/consensus"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/common"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/consensus"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/core/types"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/log"
 	"gopkg.in/karalabe/cookiejar.v2/collections/prque"
 )
 

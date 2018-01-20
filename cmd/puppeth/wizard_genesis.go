@@ -25,10 +25,10 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/common"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/core"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/log"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/params"
 )
 
 // makeGenesis creates a new genesis struct based on some user input.

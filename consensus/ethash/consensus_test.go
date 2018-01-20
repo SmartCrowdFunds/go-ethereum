@@ -23,9 +23,9 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/common/math"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/common/math"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/core/types"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/params"
 )
 
 type diffTest struct {

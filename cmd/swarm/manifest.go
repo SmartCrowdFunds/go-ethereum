@@ -24,9 +24,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/cmd/utils"
-	"github.com/ethereum/go-ethereum/swarm/api"
-	swarm "github.com/ethereum/go-ethereum/swarm/api/client"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/cmd/utils"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/swarm/api"
+	swarm "github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/swarm/api/client"
 	"gopkg.in/urfave/cli.v1"
 )
 

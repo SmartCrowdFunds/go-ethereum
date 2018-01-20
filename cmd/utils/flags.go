@@ -28,34 +28,34 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/accounts"
-	"github.com/ethereum/go-ethereum/accounts/keystore"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/fdlimit"
-	"github.com/ethereum/go-ethereum/consensus"
-	"github.com/ethereum/go-ethereum/consensus/clique"
-	"github.com/ethereum/go-ethereum/consensus/ethash"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/dashboard"
-	"github.com/ethereum/go-ethereum/eth"
-	"github.com/ethereum/go-ethereum/eth/downloader"
-	"github.com/ethereum/go-ethereum/eth/gasprice"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/ethstats"
-	"github.com/ethereum/go-ethereum/les"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/metrics"
-	"github.com/ethereum/go-ethereum/node"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/p2p/discover"
-	"github.com/ethereum/go-ethereum/p2p/discv5"
-	"github.com/ethereum/go-ethereum/p2p/nat"
-	"github.com/ethereum/go-ethereum/p2p/netutil"
-	"github.com/ethereum/go-ethereum/params"
-	whisper "github.com/ethereum/go-ethereum/whisper/whisperv5"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/accounts"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/accounts/keystore"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/common"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/common/fdlimit"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/consensus"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/consensus/clique"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/consensus/ethash"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/core"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/core/state"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/core/vm"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/crypto"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/dashboard"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/eth"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/eth/downloader"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/eth/gasprice"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/ethdb"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/ethstats"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/les"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/log"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/metrics"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/node"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/p2p"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/p2p/discover"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/p2p/discv5"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/p2p/nat"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/p2p/netutil"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/params"
+	whisper "github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/whisper/whisperv5"
 	"gopkg.in/urfave/cli.v1"
 )
 
@@ -750,7 +750,7 @@ func MakeAddress(ks *keystore.KeyStore, account string) (accounts.Account, error
 	log.Warn("-------------------------------------------------------------------")
 	log.Warn("Referring to accounts by order in the keystore folder is dangerous!")
 	log.Warn("This functionality is deprecated and will be removed in the future!")
-	log.Warn("Please use explicit addresses! (can search via `geth account list`)")
+	log.Warn("Please use explicit addresses! (can search via `gscf account list`)")
 	log.Warn("-------------------------------------------------------------------")
 
 	accs := ks.Accounts()
@@ -1226,11 +1226,11 @@ func MakeConsolePreloads(ctx *cli.Context) []string {
 // This is a temporary function used for migrating old command/flags to the
 // new format.
 //
-// e.g. geth account new --keystore /tmp/mykeystore --lightkdf
+// e.g. gscf account new --keystore /tmp/mykeystore --lightkdf
 //
 // is equivalent after calling this method with:
 //
-// geth --keystore /tmp/mykeystore --lightkdf account new
+// gscf --keystore /tmp/mykeystore --lightkdf account new
 //
 // This allows the use of the existing configuration functionality.
 // When all flags are migrated this function can be removed and the existing

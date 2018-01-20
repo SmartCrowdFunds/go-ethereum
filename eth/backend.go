@@ -25,29 +25,29 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/ethereum/go-ethereum/accounts"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/consensus"
-	"github.com/ethereum/go-ethereum/consensus/clique"
-	"github.com/ethereum/go-ethereum/consensus/ethash"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/bloombits"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/eth/downloader"
-	"github.com/ethereum/go-ethereum/eth/filters"
-	"github.com/ethereum/go-ethereum/eth/gasprice"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/event"
-	"github.com/ethereum/go-ethereum/internal/ethapi"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/miner"
-	"github.com/ethereum/go-ethereum/node"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/rlp"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/accounts"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/common"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/common/hexutil"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/consensus"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/consensus/clique"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/consensus/ethash"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/core"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/core/bloombits"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/core/types"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/core/vm"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/eth/downloader"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/eth/filters"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/eth/gasprice"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/ethdb"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/event"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/internal/ethapi"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/log"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/miner"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/node"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/p2p"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/params"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/rlp"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/rpc"
 )
 
 type LesServer interface {
@@ -140,7 +140,7 @@ func New(ctx *node.ServiceContext, config *Config) (*Ethereum, error) {
 	if !config.SkipBcVersionCheck {
 		bcVersion := core.GetBlockChainVersion(chainDb)
 		if bcVersion != core.BlockChainVersion && bcVersion != 0 {
-			return nil, fmt.Errorf("Blockchain DB version mismatch (%d / %d). Run geth upgradedb.\n", bcVersion, core.BlockChainVersion)
+			return nil, fmt.Errorf("Blockchain DB version mismatch (%d / %d). Run gscf upgradedb.\n", bcVersion, core.BlockChainVersion)
 		}
 		core.WriteBlockChainVersion(chainDb, core.BlockChainVersion)
 	}
@@ -184,7 +184,7 @@ func makeExtraData(extra []byte) []byte {
 		// create default extradata
 		extra, _ = rlp.EncodeToBytes([]interface{}{
 			uint(params.VersionMajor<<16 | params.VersionMinor<<8 | params.VersionPatch),
-			"geth",
+			"gscf",
 			runtime.Version(),
 			runtime.GOOS,
 		})

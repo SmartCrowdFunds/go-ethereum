@@ -27,12 +27,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/event"
-	"github.com/ethereum/go-ethereum/node"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/p2p/discover"
-	"github.com/ethereum/go-ethereum/p2p/simulations/adapters"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/event"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/node"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/p2p"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/p2p/discover"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/p2p/simulations/adapters"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/rpc"
 )
 
 // testService implements the node.Service interface and provides protocols

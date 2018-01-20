@@ -16,14 +16,14 @@
 
 // Contains all the wrappers from the params package.
 
-package geth
+package gscf
 
 import (
 	"encoding/json"
 
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/p2p/discv5"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/core"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/p2p/discv5"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/params"
 )
 
 // MainnetGenesis returns the JSON spec to use for the main Ethereum network. It

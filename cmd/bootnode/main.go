@@ -23,13 +23,13 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/ethereum/go-ethereum/cmd/utils"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/p2p/discover"
-	"github.com/ethereum/go-ethereum/p2p/discv5"
-	"github.com/ethereum/go-ethereum/p2p/nat"
-	"github.com/ethereum/go-ethereum/p2p/netutil"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/cmd/utils"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/crypto"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/log"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/p2p/discover"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/p2p/discv5"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/p2p/nat"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/p2p/netutil"
 )
 
 func main() {

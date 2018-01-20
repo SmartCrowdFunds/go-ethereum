@@ -16,16 +16,16 @@
 
 // Contains all the wrappers from the bind package.
 
-package geth
+package gscf
 
 import (
 	"math/big"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/accounts/abi"
-	"github.com/ethereum/go-ethereum/accounts/abi/bind"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/types"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/accounts/abi"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/accounts/abi/bind"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/common"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/core/types"
 )
 
 // Signer is an interaface defining the callback when a contract requires a

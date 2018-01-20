@@ -16,13 +16,13 @@
 
 // Contains all the wrappers from the math/big package.
 
-package geth
+package gscf
 
 import (
 	"errors"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/common"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/common"
 )
 
 // A BigInt represents a signed multi-precision integer.

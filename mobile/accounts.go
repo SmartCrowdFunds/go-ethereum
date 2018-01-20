@@ -17,16 +17,16 @@
 // Contains all the wrappers from the accounts package to support client side key
 // management on mobile platforms.
 
-package geth
+package gscf
 
 import (
 	"errors"
 	"time"
 
-	"github.com/ethereum/go-ethereum/accounts"
-	"github.com/ethereum/go-ethereum/accounts/keystore"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/crypto"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/accounts"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/accounts/keystore"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/common"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/crypto"
 )
 
 const (

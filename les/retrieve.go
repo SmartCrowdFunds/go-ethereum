@@ -26,7 +26,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common/mclock"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/common/mclock"
 )
 
 var (

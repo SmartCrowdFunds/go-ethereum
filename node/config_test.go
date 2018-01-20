@@ -24,8 +24,8 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/p2p"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/crypto"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/p2p"
 )
 
 // Tests that datadirs can be successfully created, be them manually configured
@@ -73,15 +73,15 @@ func TestIPCPathResolution(t *testing.T) {
 	}{
 		{"", "", false, ""},
 		{"data", "", false, ""},
-		{"", "geth.ipc", false, filepath.Join(os.TempDir(), "geth.ipc")},
-		{"data", "geth.ipc", false, "data/geth.ipc"},
-		{"data", "./geth.ipc", false, "./geth.ipc"},
-		{"data", "/geth.ipc", false, "/geth.ipc"},
+		{"", "gscf.ipc", false, filepath.Join(os.TempDir(), "gscf.ipc")},
+		{"data", "gscf.ipc", false, "data/gscf.ipc"},
+		{"data", "./gscf.ipc", false, "./gscf.ipc"},
+		{"data", "/gscf.ipc", false, "/gscf.ipc"},
 		{"", "", true, ``},
 		{"data", "", true, ``},
-		{"", "geth.ipc", true, `\\.\pipe\geth.ipc`},
-		{"data", "geth.ipc", true, `\\.\pipe\geth.ipc`},
-		{"data", `\\.\pipe\geth.ipc`, true, `\\.\pipe\geth.ipc`},
+		{"", "gscf.ipc", true, `\\.\pipe\gscf.ipc`},
+		{"data", "gscf.ipc", true, `\\.\pipe\gscf.ipc`},
+		{"data", `\\.\pipe\gscf.ipc`, true, `\\.\pipe\gscf.ipc`},
 	}
 	for i, test := range tests {
 		// Only run when platform/test match

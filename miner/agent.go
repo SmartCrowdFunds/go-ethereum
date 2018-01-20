@@ -21,8 +21,8 @@ import (
 
 	"sync/atomic"
 
-	"github.com/ethereum/go-ethereum/consensus"
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/consensus"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/log"
 )
 
 type CpuAgent struct {

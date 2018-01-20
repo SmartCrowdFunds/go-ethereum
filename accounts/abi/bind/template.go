@@ -16,7 +16,7 @@
 
 package bind
 
-import "github.com/ethereum/go-ethereum/accounts/abi"
+import "github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/accounts/abi"
 
 // tmplData is the data structure required to fill the binding template.
 type tmplData struct {
@@ -274,8 +274,8 @@ const tmplSourceJava = `
 
 package {{.Package}};
 
-import org.ethereum.geth.*;
-import org.ethereum.geth.internal.*;
+import org.ethereum.gscf.*;
+import org.ethereum.gscf.internal.*;
 
 {{range $contract := .Contracts}}
 	public class {{.Type}} {

@@ -37,12 +37,12 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/ethereum/go-ethereum/contracts/chequebook"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/p2p"
-	bzzswap "github.com/ethereum/go-ethereum/swarm/services/swap"
-	"github.com/ethereum/go-ethereum/swarm/services/swap/swap"
-	"github.com/ethereum/go-ethereum/swarm/storage"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/contracts/chequebook"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/log"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/p2p"
+	bzzswap "github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/swarm/services/swap"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/swarm/services/swap/swap"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/swarm/storage"
 )
 
 const (

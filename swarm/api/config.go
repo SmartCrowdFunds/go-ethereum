@@ -22,14 +22,14 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/contracts/ens"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/node"
-	"github.com/ethereum/go-ethereum/swarm/network"
-	"github.com/ethereum/go-ethereum/swarm/services/swap"
-	"github.com/ethereum/go-ethereum/swarm/storage"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/common"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/contracts/ens"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/crypto"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/log"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/node"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/swarm/network"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/swarm/services/swap"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/swarm/storage"
 )
 
 const (
@@ -75,7 +75,7 @@ func NewDefaultConfig() (self *Config) {
 		ListenAddr:    DefaultHTTPListenAddr,
 		Port:          DefaultHTTPPort,
 		Path:          node.DefaultDataDir(),
-		EnsApi:        node.DefaultIPCEndpoint("geth"),
+		EnsApi:        node.DefaultIPCEndpoint("gscf"),
 		EnsRoot:       ens.TestNetAddress,
 		NetworkId:     network.NetworkId,
 		SwapEnabled:   false,

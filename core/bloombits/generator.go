@@ -19,7 +19,7 @@ package bloombits
 import (
 	"errors"
 
-	"github.com/ethereum/go-ethereum/core/types"
+	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/core/types"
 )
 
 // errSectionOutOfBounds is returned if the user tried to add more bloom filters
@@ -30,7 +30,7 @@ var errSectionOutOfBounds = errors.New("section out of bounds")
 // to be used for batched filtering.
 type Generator struct {
 	blooms   [types.BloomBitLength][]byte // Rotated blooms for per-bit matching
-	sections uint                         // Number of sections to batch together
+	sections uint                         // Number of sections to batch togscfer
 	nextBit  uint                         // Next bit to set when adding a bloom
 }
 
