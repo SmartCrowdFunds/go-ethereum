@@ -89,14 +89,14 @@ here.
 
 Specifying the `--testnet` flag however will reconfigure your Gscf instance a bit:
 
- * Instead of using the default data directory (`~/.ethereum` on Linux for example), Gscf will nest
-   itself one level deeper into a `testnet` subfolder (`~/.ethereum/testnet` on Linux). Note, on OSX
+ * Instead of using the default data directory (`~/.gscf` on Linux for example), Gscf will nest
+   itself one level deeper into a `testnet` subfolder (`~/.gscf/testnet` on Linux). Note, on OSX
    and Linux this also means that attaching to a running testnet node requires the use of a custom
    endpoint since `gscf attach` will try to attach to a production node endpoint by default. E.g.
    `gscf attach <datadir>/testnet/gscf.ipc`. Windows users are not affected by this.
  * Instead of connecting the main Ethereum network, the client will connect to the test network,
    which uses different P2P bootnodes, different network IDs and genesis states.
-   
+
 *Note: Although there are some internal protective measures to prevent transactions from crossing
 over between the main network and test network, you should make sure to always use separate accounts
 for play-money and real-money. Unless you manually move accounts, Gscf will by default correctly
@@ -123,9 +123,9 @@ $ gscf --your-favourite-flags dumpconfig
 One of the quickest ways to get Ethereum up and running on your machine is by using Docker:
 
 ```
-docker run -d --name ethereum-node -v /Users/alice/ethereum:/root \
+docker run -d --name gscf-node -v /Users/alice/gscf:/root \
            -p 8545:8545 -p 30303:30303 \
-           ethereum/client-go --fast --cache=512
+           gscf/client-go --fast --cache=512
 ```
 
 This will start gscf in fast sync mode with a DB memory allowance of 512MB just as the above command does.  It will also create a persistent volume in your home directory for saving your blockchain as well as map the default ports. There is also an `alpine` tag available for a slim version of the image.
