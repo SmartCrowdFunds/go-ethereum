@@ -6,8 +6,8 @@ import (
 	"encoding/json"
 	"errors"
 
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/common"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/common/hexutil"
+	"github.com/SmartCrowdFunds/go-scft/common"
+	"github.com/SmartCrowdFunds/go-scft/common/hexutil"
 )
 
 var _ = (*logMarshaling)(nil)

@@ -29,12 +29,12 @@ import (
 	"strings"
 	"text/tabwriter"
 
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/crypto"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/p2p"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/p2p/discover"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/p2p/simulations"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/p2p/simulations/adapters"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/rpc"
+	"github.com/SmartCrowdFunds/go-scft/crypto"
+	"github.com/SmartCrowdFunds/go-scft/p2p"
+	"github.com/SmartCrowdFunds/go-scft/p2p/discover"
+	"github.com/SmartCrowdFunds/go-scft/p2p/simulations"
+	"github.com/SmartCrowdFunds/go-scft/p2p/simulations/adapters"
+	"github.com/SmartCrowdFunds/go-scft/rpc"
 	"gopkg.in/urfave/cli.v1"
 )
 

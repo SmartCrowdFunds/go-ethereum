@@ -36,7 +36,7 @@ import (
 	"math/big"
 	"unsafe"
 
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/common/math"
+	"github.com/SmartCrowdFunds/go-scft/common/math"
 )
 
 /*

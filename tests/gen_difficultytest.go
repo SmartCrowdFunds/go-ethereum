@@ -6,8 +6,8 @@ import (
 	"encoding/json"
 	"math/big"
 
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/common"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/common/math"
+	"github.com/SmartCrowdFunds/go-scft/common"
+	"github.com/SmartCrowdFunds/go-scft/common/math"
 )
 
 var _ = (*difficultyTestMarshaling)(nil)

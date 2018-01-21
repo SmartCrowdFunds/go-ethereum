@@ -1,20 +1,20 @@
-// Copyright 2014 The smartcrowdfunds-blockchain Authors
-// This file is part of smartcrowdfunds-blockchain.
+// Copyright 2014 The go-scft Authors
+// This file is part of go-scft.
 //
-// smartcrowdfunds-blockchain is free software: you can redistribute it and/or modify
+// go-scft is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
 // (at your option) any later version.
 //
-// smartcrowdfunds-blockchain is distributed in the hope that it will be useful,
+// go-scft is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with smartcrowdfunds-blockchain. If not, see <http://www.gnu.org/licenses/>.
+// along with go-scft. If not, see <http://www.gnu.org/licenses/>.
 
-// Package utils contains internal helper functions for smartcrowdfunds-blockchain commands.
+// Package utils contains internal helper functions for go-scft commands.
 package utils
 
 import (
@@ -26,12 +26,12 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/core"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/core/types"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/internal/debug"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/log"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/node"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/rlp"
+	"github.com/SmartCrowdFunds/go-scft/core"
+	"github.com/SmartCrowdFunds/go-scft/core/types"
+	"github.com/SmartCrowdFunds/go-scft/internal/debug"
+	"github.com/SmartCrowdFunds/go-scft/log"
+	"github.com/SmartCrowdFunds/go-scft/node"
+	"github.com/SmartCrowdFunds/go-scft/rlp"
 )
 
 const (

@@ -1,4 +1,4 @@
-export ROOT="${GOPATH}/src/github.com/SmartCrowdFunds/smartcrowdfunds-blockchain"
+export ROOT="${GOPATH}/src/github.com/SmartCrowdFunds/go-scft"
 export PATH="${ROOT}/swarm/dev/bin:${PATH}"
 
 cd "${ROOT}/swarm/dev"

@@ -4,8 +4,8 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/common"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/params"
+	"github.com/SmartCrowdFunds/go-scft/common"
+	"github.com/SmartCrowdFunds/go-scft/params"
 )
 
 func TestByteOp(t *testing.T) {

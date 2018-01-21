@@ -2,11 +2,11 @@ FROM alpine:3.7
 
 RUN \
   apk add --update go git make gcc musl-dev linux-headers ca-certificates && \
-  git clone --depth 1 --branch release/1.7 https://github.com/SmartCrowdFunds/smartcrowdfunds-blockchain && \
-  (cd smartcrowdfunds-blockchain && make gscf) && \
-  cp smartcrowdfunds-blockchain/build/bin/gscf /gscf && \
+  git clone --depth 1 --branch release/1.7 https://github.com/SmartCrowdFunds/go-scft && \
+  (cd go-scft && make gscf) && \
+  cp go-scft/build/bin/gscf /gscf && \
   apk del go git make gcc musl-dev linux-headers && \
-  rm -rf /smartcrowdfunds-blockchain && rm -rf /var/cache/apk/*
+  rm -rf /go-scft && rm -rf /var/cache/apk/*
 
 EXPOSE 8545
 EXPOSE 30303

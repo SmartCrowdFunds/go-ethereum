@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"io/ioutil"
 
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/accounts/keystore"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/cmd/utils"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/crypto"
+	"github.com/SmartCrowdFunds/go-scft/accounts/keystore"
+	"github.com/SmartCrowdFunds/go-scft/cmd/utils"
+	"github.com/SmartCrowdFunds/go-scft/crypto"
 	"gopkg.in/urfave/cli.v1"
 )
 

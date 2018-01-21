@@ -5,7 +5,7 @@ package whisperv5
 import (
 	"encoding/json"
 
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/common/hexutil"
+	"github.com/SmartCrowdFunds/go-scft/common/hexutil"
 )
 
 var _ = (*newMessageOverride)(nil)

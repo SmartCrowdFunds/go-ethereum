@@ -69,13 +69,13 @@ var (
 	licenseCommentRE = regexp.MustCompile(`^//\s*(Copyright|This file is part of).*?\n(?://.*?\n)*\n*`)
 
 	// this text appears at the start of AUTHORS
-	authorsFileHeader = "# This is the official list of smartcrowdfunds-blockchain authors for copyright purposes.\n\n"
+	authorsFileHeader = "# This is the official list of go-scft authors for copyright purposes.\n\n"
 )
 
 // this template generates the license comment.
 // its input is an info structure.
 var licenseT = template.Must(template.New("").Parse(`
-// Copyright {{.Year}} The smartcrowdfunds-blockchain Authors
+// Copyright {{.Year}} The go-scft Authors
 // This file is part of {{.Whole false}}.
 //
 // {{.Whole true}} is free software: you can redistribute it and/or modify
@@ -114,12 +114,12 @@ func (i info) ShortLicense() string {
 
 func (i info) Whole(startOfSentence bool) string {
 	if i.gpl() {
-		return "smartcrowdfunds-blockchain"
+		return "go-scft"
 	}
 	if startOfSentence {
-		return "The smartcrowdfunds-blockchain library"
+		return "The go-scft library"
 	}
-	return "the smartcrowdfunds-blockchain library"
+	return "the go-scft library"
 }
 
 func (i info) gpl() bool {

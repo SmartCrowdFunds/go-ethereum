@@ -3,9 +3,9 @@ InstallDir "$InstDir"
 OutFile "${OUTPUTFILE}" # set through command line arguments
 
 # Links for "Add/Remove Programs"
-!define HELPURL "https://github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/issues"
-!define UPDATEURL "https://github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/releases"
-!define ABOUTURL "https://github.com/SmartCrowdFunds/smartcrowdfunds-blockchain#ethereum-go"
+!define HELPURL "https://github.com/SmartCrowdFunds/go-scft/issues"
+!define UPDATEURL "https://github.com/SmartCrowdFunds/go-scft/releases"
+!define ABOUTURL "https://github.com/SmartCrowdFunds/go-scft#ethereum-go"
 !define /date NOW "%Y%m%d"
 
 PageEx license

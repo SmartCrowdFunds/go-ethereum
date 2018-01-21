@@ -42,7 +42,7 @@ import (
 	"fmt"
 	"hash"
 
-	ethcrypto "github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/crypto"
+	ethcrypto "github.com/SmartCrowdFunds/go-scft/crypto"
 )
 
 var (

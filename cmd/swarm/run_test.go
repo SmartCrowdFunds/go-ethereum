@@ -1,18 +1,18 @@
-// Copyright 2016 The smartcrowdfunds-blockchain Authors
-// This file is part of smartcrowdfunds-blockchain.
+// Copyright 2016 The go-scft Authors
+// This file is part of go-scft.
 //
-// smartcrowdfunds-blockchain is free software: you can redistribute it and/or modify
+// go-scft is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
 // (at your option) any later version.
 //
-// smartcrowdfunds-blockchain is distributed in the hope that it will be useful,
+// go-scft is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with smartcrowdfunds-blockchain. If not, see <http://www.gnu.org/licenses/>.
+// along with go-scft. If not, see <http://www.gnu.org/licenses/>.
 
 package main
 
@@ -27,13 +27,13 @@ import (
 	"time"
 
 	"github.com/docker/docker/pkg/reexec"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/accounts"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/accounts/keystore"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/internal/cmdtest"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/node"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/p2p"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/rpc"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/swarm"
+	"github.com/SmartCrowdFunds/go-scft/accounts"
+	"github.com/SmartCrowdFunds/go-scft/accounts/keystore"
+	"github.com/SmartCrowdFunds/go-scft/internal/cmdtest"
+	"github.com/SmartCrowdFunds/go-scft/node"
+	"github.com/SmartCrowdFunds/go-scft/p2p"
+	"github.com/SmartCrowdFunds/go-scft/rpc"
+	"github.com/SmartCrowdFunds/go-scft/swarm"
 )
 
 func init() {

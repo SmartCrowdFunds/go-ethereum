@@ -1,18 +1,18 @@
-// Copyright 2015 The smartcrowdfunds-blockchain Authors
-// This file is part of the smartcrowdfunds-blockchain library.
+// Copyright 2015 The go-scft Authors
+// This file is part of the go-scft library.
 //
-// The smartcrowdfunds-blockchain library is free software: you can redistribute it and/or modify
+// The go-scft library is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Lesser General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
 // (at your option) any later version.
 //
-// The smartcrowdfunds-blockchain library is distributed in the hope that it will be useful,
+// The go-scft library is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the smartcrowdfunds-blockchain library. If not, see <http://www.gnu.org/licenses/>.
+// along with the go-scft library. If not, see <http://www.gnu.org/licenses/>.
 
 // Package release contains the node service that tracks client releases.
 package release
@@ -25,15 +25,15 @@ import (
 	"strings"
 	"time"
 
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/accounts/abi/bind"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/common"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/eth"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/internal/ethapi"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/les"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/log"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/node"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/p2p"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/rpc"
+	"github.com/SmartCrowdFunds/go-scft/accounts/abi/bind"
+	"github.com/SmartCrowdFunds/go-scft/common"
+	"github.com/SmartCrowdFunds/go-scft/eth"
+	"github.com/SmartCrowdFunds/go-scft/internal/ethapi"
+	"github.com/SmartCrowdFunds/go-scft/les"
+	"github.com/SmartCrowdFunds/go-scft/log"
+	"github.com/SmartCrowdFunds/go-scft/node"
+	"github.com/SmartCrowdFunds/go-scft/p2p"
+	"github.com/SmartCrowdFunds/go-scft/rpc"
 )
 
 // Interval to check for new releases
@@ -149,7 +149,7 @@ func (r *ReleaseService) checkVersion() {
 
 		warning := fmt.Sprintf("Client v%d.%d.%d-%x seems older than the latest upstream release v%d.%d.%d-%x",
 			r.config.Major, r.config.Minor, r.config.Patch, r.config.Commit[:4], version.Major, version.Minor, version.Patch, version.Commit[:4])
-		howtofix := fmt.Sprintf("Please check https://github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/releases for new releases")
+		howtofix := fmt.Sprintf("Please check https://github.com/SmartCrowdFunds/go-scft/releases for new releases")
 		separator := strings.Repeat("-", len(warning))
 
 		log.Warn(separator)

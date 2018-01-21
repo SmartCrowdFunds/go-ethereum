@@ -1,18 +1,18 @@
-// Copyright 2017 The smartcrowdfunds-blockchain Authors
-// This file is part of smartcrowdfunds-blockchain.
+// Copyright 2017 The go-scft Authors
+// This file is part of go-scft.
 //
-// smartcrowdfunds-blockchain is free software: you can redistribute it and/or modify
+// go-scft is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
 // (at your option) any later version.
 //
-// smartcrowdfunds-blockchain is distributed in the hope that it will be useful,
+// go-scft is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with smartcrowdfunds-blockchain. If not, see <http://www.gnu.org/licenses/>.
+// along with go-scft. If not, see <http://www.gnu.org/licenses/>.
 
 // This is a simple Whisper node. It could be used as a stand-alone bootstrap node.
 // Also, could be used for different test and diagnostics purposes.
@@ -34,16 +34,16 @@ import (
 	"strings"
 	"time"
 
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/cmd/utils"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/common"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/console"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/crypto"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/log"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/p2p"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/p2p/discover"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/p2p/nat"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/whisper/mailserver"
-	whisper "github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/whisper/whisperv5"
+	"github.com/SmartCrowdFunds/go-scft/cmd/utils"
+	"github.com/SmartCrowdFunds/go-scft/common"
+	"github.com/SmartCrowdFunds/go-scft/console"
+	"github.com/SmartCrowdFunds/go-scft/crypto"
+	"github.com/SmartCrowdFunds/go-scft/log"
+	"github.com/SmartCrowdFunds/go-scft/p2p"
+	"github.com/SmartCrowdFunds/go-scft/p2p/discover"
+	"github.com/SmartCrowdFunds/go-scft/p2p/nat"
+	"github.com/SmartCrowdFunds/go-scft/whisper/mailserver"
+	whisper "github.com/SmartCrowdFunds/go-scft/whisper/whisperv5"
 	"golang.org/x/crypto/pbkdf2"
 )
 

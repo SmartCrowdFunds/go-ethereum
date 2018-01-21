@@ -10,8 +10,8 @@
   <packaging>aar</packaging>
 
   <name>Android Ethereum Client</name>
-  <description>Android port of the smartcrowdfunds-blockchain libraries and node</description>
-  <url>https://github.com/SmartCrowdFunds/smartcrowdfunds-blockchain</url>
+  <description>Android port of the go-scft libraries and node</description>
+  <url>https://github.com/SmartCrowdFunds/go-scft</url>
   <inceptionYear>2015</inceptionYear>
 
   <licenses>
@@ -48,10 +48,10 @@
 
   <issueManagement>
     <system>GitHub Issues</system>
-    <url>https://github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/issues/</url>
+    <url>https://github.com/SmartCrowdFunds/go-scft/issues/</url>
   </issueManagement>
 
   <scm>
-    <url>https://github.com/SmartCrowdFunds/smartcrowdfunds-blockchain</url>
+    <url>https://github.com/SmartCrowdFunds/go-scft</url>
   </scm>
 </project>

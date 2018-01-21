@@ -11,10 +11,10 @@ fi
 workspace="$PWD/build/_workspace"
 root="$PWD"
 ethdir="$workspace/src/github.com/SmartCrowdFunds"
-if [ ! -L "$ethdir/smartcrowdfunds-blockchain" ]; then
+if [ ! -L "$ethdir/go-scft" ]; then
     mkdir -p "$ethdir"
     cd "$ethdir"
-    ln -s ../../../../../. smartcrowdfunds-blockchain
+    ln -s ../../../../../. go-scft
     cd "$root"
 fi
 
@@ -23,8 +23,8 @@ GOPATH="$workspace"
 export GOPATH
 
 # Run the command inside the workspace.
-cd "$ethdir/smartcrowdfunds-blockchain"
-PWD="$ethdir/smartcrowdfunds-blockchain"
+cd "$ethdir/go-scft"
+PWD="$ethdir/go-scft"
 
 # Launch the arguments with the configured environment.
 exec "$@"

@@ -1,18 +1,18 @@
-// Copyright 2014 The smartcrowdfunds-blockchain Authors
-// This file is part of the smartcrowdfunds-blockchain library.
+// Copyright 2014 The go-scft Authors
+// This file is part of the go-scft library.
 //
-// The smartcrowdfunds-blockchain library is free software: you can redistribute it and/or modify
+// The go-scft library is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Lesser General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
 // (at your option) any later version.
 //
-// The smartcrowdfunds-blockchain library is distributed in the hope that it will be useful,
+// The go-scft library is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the smartcrowdfunds-blockchain library. If not, see <http://www.gnu.org/licenses/>.
+// along with the go-scft library. If not, see <http://www.gnu.org/licenses/>.
 
 // Package p2p implements the Ethereum p2p network protocols.
 package p2p
@@ -25,14 +25,14 @@ import (
 	"sync"
 	"time"
 
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/common"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/common/mclock"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/event"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/log"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/p2p/discover"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/p2p/discv5"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/p2p/nat"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/p2p/netutil"
+	"github.com/SmartCrowdFunds/go-scft/common"
+	"github.com/SmartCrowdFunds/go-scft/common/mclock"
+	"github.com/SmartCrowdFunds/go-scft/event"
+	"github.com/SmartCrowdFunds/go-scft/log"
+	"github.com/SmartCrowdFunds/go-scft/p2p/discover"
+	"github.com/SmartCrowdFunds/go-scft/p2p/discv5"
+	"github.com/SmartCrowdFunds/go-scft/p2p/nat"
+	"github.com/SmartCrowdFunds/go-scft/p2p/netutil"
 )
 
 const (

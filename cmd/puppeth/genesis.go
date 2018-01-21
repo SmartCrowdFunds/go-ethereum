@@ -1,18 +1,18 @@
-// Copyright 2017 The smartcrowdfunds-blockchain Authors
-// This file is part of smartcrowdfunds-blockchain.
+// Copyright 2017 The go-scft Authors
+// This file is part of go-scft.
 //
-// smartcrowdfunds-blockchain is free software: you can redistribute it and/or modify
+// go-scft is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
 // (at your option) any later version.
 //
-// smartcrowdfunds-blockchain is distributed in the hope that it will be useful,
+// go-scft is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with smartcrowdfunds-blockchain. If not, see <http://www.gnu.org/licenses/>.
+// along with go-scft. If not, see <http://www.gnu.org/licenses/>.
 
 package main
 
@@ -21,11 +21,11 @@ import (
 	"errors"
 	"math"
 
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/common"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/common/hexutil"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/consensus/ethash"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/core"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/params"
+	"github.com/SmartCrowdFunds/go-scft/common"
+	"github.com/SmartCrowdFunds/go-scft/common/hexutil"
+	"github.com/SmartCrowdFunds/go-scft/consensus/ethash"
+	"github.com/SmartCrowdFunds/go-scft/core"
+	"github.com/SmartCrowdFunds/go-scft/params"
 )
 
 // cppEthereumGenesisSpec represents the genesis specification format used by the
@@ -85,10 +85,10 @@ type cppEthereumGenesisSpecLinearPricing struct {
 	Word uint64 `json:"word"`
 }
 
-// newCppEthereumGenesisSpec converts a smartcrowdfunds-blockchain genesis block into a Parity specific
+// newCppEthereumGenesisSpec converts a go-scft genesis block into a Parity specific
 // chain specification format.
 func newCppEthereumGenesisSpec(network string, genesis *core.Genesis) (*cppEthereumGenesisSpec, error) {
-	// Only ethash is currently supported between smartcrowdfunds-blockchain and cpp-ethereum
+	// Only ethash is currently supported between go-scft and cpp-ethereum
 	if genesis.Config.Ethash == nil {
 		return nil, errors.New("unsupported consensus engine")
 	}
@@ -256,10 +256,10 @@ type parityChainSpecAltBnPairingPricing struct {
 	Pair uint64 `json:"pair"`
 }
 
-// newParityChainSpec converts a smartcrowdfunds-blockchain genesis block into a Parity specific
+// newParityChainSpec converts a go-scft genesis block into a Parity specific
 // chain specification format.
 func newParityChainSpec(network string, genesis *core.Genesis, bootnodes []string) (*parityChainSpec, error) {
-	// Only ethash is currently supported between smartcrowdfunds-blockchain and Parity
+	// Only ethash is currently supported between go-scft and Parity
 	if genesis.Config.Ethash == nil {
 		return nil, errors.New("unsupported consensus engine")
 	}
@@ -355,10 +355,10 @@ type pyEthereumGenesisSpec struct {
 	ParentHash common.Hash       `json:"parentHash"`
 }
 
-// newPyEthereumGenesisSpec converts a smartcrowdfunds-blockchain genesis block into a Parity specific
+// newPyEthereumGenesisSpec converts a go-scft genesis block into a Parity specific
 // chain specification format.
 func newPyEthereumGenesisSpec(network string, genesis *core.Genesis) (*pyEthereumGenesisSpec, error) {
-	// Only ethash is currently supported between smartcrowdfunds-blockchain and pyethereum
+	// Only ethash is currently supported between go-scft and pyethereum
 	if genesis.Config.Ethash == nil {
 		return nil, errors.New("unsupported consensus engine")
 	}

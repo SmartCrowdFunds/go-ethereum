@@ -1,18 +1,18 @@
-// Copyright 2016 The smartcrowdfunds-blockchain Authors
-// This file is part of smartcrowdfunds-blockchain.
+// Copyright 2016 The go-scft Authors
+// This file is part of go-scft.
 //
-// smartcrowdfunds-blockchain is free software: you can redistribute it and/or modify
+// go-scft is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
 // (at your option) any later version.
 //
-// smartcrowdfunds-blockchain is distributed in the hope that it will be useful,
+// go-scft is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with smartcrowdfunds-blockchain. If not, see <http://www.gnu.org/licenses/>.
+// along with go-scft. If not, see <http://www.gnu.org/licenses/>.
 
 package main
 
@@ -31,23 +31,23 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/accounts"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/accounts/keystore"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/cmd/utils"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/common"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/console"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/contracts/ens"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/crypto"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/ethclient"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/internal/debug"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/log"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/node"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/p2p"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/p2p/discover"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/params"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/rpc"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/swarm"
-	bzzapi "github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/swarm/api"
+	"github.com/SmartCrowdFunds/go-scft/accounts"
+	"github.com/SmartCrowdFunds/go-scft/accounts/keystore"
+	"github.com/SmartCrowdFunds/go-scft/cmd/utils"
+	"github.com/SmartCrowdFunds/go-scft/common"
+	"github.com/SmartCrowdFunds/go-scft/console"
+	"github.com/SmartCrowdFunds/go-scft/contracts/ens"
+	"github.com/SmartCrowdFunds/go-scft/crypto"
+	"github.com/SmartCrowdFunds/go-scft/ethclient"
+	"github.com/SmartCrowdFunds/go-scft/internal/debug"
+	"github.com/SmartCrowdFunds/go-scft/log"
+	"github.com/SmartCrowdFunds/go-scft/node"
+	"github.com/SmartCrowdFunds/go-scft/p2p"
+	"github.com/SmartCrowdFunds/go-scft/p2p/discover"
+	"github.com/SmartCrowdFunds/go-scft/params"
+	"github.com/SmartCrowdFunds/go-scft/rpc"
+	"github.com/SmartCrowdFunds/go-scft/swarm"
+	bzzapi "github.com/SmartCrowdFunds/go-scft/swarm/api"
 
 	"gopkg.in/urfave/cli.v1"
 )
@@ -182,7 +182,7 @@ var app = utils.NewApp(gitCommit, "Ethereum Swarm")
 func init() {
 	app.Action = bzzd
 	app.HideVersion = true // we have a command to print the version
-	app.Copyright = "Copyright 2013-2016 The smartcrowdfunds-blockchain Authors"
+	app.Copyright = "Copyright 2013-2016 The go-scft Authors"
 	app.Commands = []cli.Command{
 		{
 			Action:    version,

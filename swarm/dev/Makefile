@@ -3,12 +3,12 @@
 default: build
 
 build:
-	go build -o bin/swarm    github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/cmd/swarm
-	go build -o bin/gscf     github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/cmd/gscf
-	go build -o bin/bootnode github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/cmd/bootnode
+	go build -o bin/swarm    github.com/SmartCrowdFunds/go-scft/cmd/swarm
+	go build -o bin/gscf     github.com/SmartCrowdFunds/go-scft/cmd/gscf
+	go build -o bin/bootnode github.com/SmartCrowdFunds/go-scft/cmd/bootnode
 
 cluster: build
 	scripts/boot-cluster.sh
 
 test:
-	go test -v github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/swarm/...
+	go test -v github.com/SmartCrowdFunds/go-scft/swarm/...

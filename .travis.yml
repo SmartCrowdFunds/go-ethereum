@@ -1,5 +1,5 @@
 language: go
-go_import_path: github.com/SmartCrowdFunds/smartcrowdfunds-blockchain
+go_import_path: github.com/SmartCrowdFunds/go-scft
 sudo: false
 matrix:
   include:

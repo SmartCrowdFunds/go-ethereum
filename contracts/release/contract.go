@@ -7,10 +7,10 @@ import (
 	"math/big"
 	"strings"
 
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/accounts/abi"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/accounts/abi/bind"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/common"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/core/types"
+	"github.com/SmartCrowdFunds/go-scft/accounts/abi"
+	"github.com/SmartCrowdFunds/go-scft/accounts/abi/bind"
+	"github.com/SmartCrowdFunds/go-scft/common"
+	"github.com/SmartCrowdFunds/go-scft/core/types"
 )
 
 // ReleaseOracleABI is the input ABI used to generate the binding from.

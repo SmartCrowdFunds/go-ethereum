@@ -1,18 +1,18 @@
-// Copyright 2017 The smartcrowdfunds-blockchain Authors
-// This file is part of smartcrowdfunds-blockchain.
+// Copyright 2017 The go-scft Authors
+// This file is part of go-scft.
 //
-// smartcrowdfunds-blockchain is free software: you can redistribute it and/or modify
+// go-scft is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
 // (at your option) any later version.
 //
-// smartcrowdfunds-blockchain is distributed in the hope that it will be useful,
+// go-scft is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with smartcrowdfunds-blockchain. If not, see <http://www.gnu.org/licenses/>.
+// along with go-scft. If not, see <http://www.gnu.org/licenses/>.
 
 // faucet is a Ether faucet backed by a light client.
 package main
@@ -41,23 +41,23 @@ import (
 	"sync"
 	"time"
 
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/accounts"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/accounts/keystore"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/common"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/core"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/core/types"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/eth"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/eth/downloader"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/ethclient"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/ethstats"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/les"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/log"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/node"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/p2p"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/p2p/discover"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/p2p/discv5"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/p2p/nat"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/params"
+	"github.com/SmartCrowdFunds/go-scft/accounts"
+	"github.com/SmartCrowdFunds/go-scft/accounts/keystore"
+	"github.com/SmartCrowdFunds/go-scft/common"
+	"github.com/SmartCrowdFunds/go-scft/core"
+	"github.com/SmartCrowdFunds/go-scft/core/types"
+	"github.com/SmartCrowdFunds/go-scft/eth"
+	"github.com/SmartCrowdFunds/go-scft/eth/downloader"
+	"github.com/SmartCrowdFunds/go-scft/ethclient"
+	"github.com/SmartCrowdFunds/go-scft/ethstats"
+	"github.com/SmartCrowdFunds/go-scft/les"
+	"github.com/SmartCrowdFunds/go-scft/log"
+	"github.com/SmartCrowdFunds/go-scft/node"
+	"github.com/SmartCrowdFunds/go-scft/p2p"
+	"github.com/SmartCrowdFunds/go-scft/p2p/discover"
+	"github.com/SmartCrowdFunds/go-scft/p2p/discv5"
+	"github.com/SmartCrowdFunds/go-scft/p2p/nat"
+	"github.com/SmartCrowdFunds/go-scft/params"
 	"golang.org/x/net/websocket"
 )
 
@@ -451,7 +451,7 @@ func (f *faucet) apiHandler(conn *websocket.Conn) {
 		case *noauthFlag:
 			username, avatar, address, err = authNoAuth(msg.URL)
 		default:
-			err = errors.New("Something funky happened, please open an issue at https://github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/issues")
+			err = errors.New("Something funky happened, please open an issue at https://github.com/SmartCrowdFunds/go-scft/issues")
 		}
 		if err != nil {
 			if err = sendError(conn, err); err != nil {

@@ -1,23 +1,23 @@
-// Copyright 2016 The smartcrowdfunds-blockchain Authors
-// This file is part of the smartcrowdfunds-blockchain library.
+// Copyright 2016 The go-scft Authors
+// This file is part of the go-scft library.
 //
-// The smartcrowdfunds-blockchain library is free software: you can redistribute it and/or modify
+// The go-scft library is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Lesser General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
 // (at your option) any later version.
 //
-// The smartcrowdfunds-blockchain library is distributed in the hope that it will be useful,
+// The go-scft library is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the smartcrowdfunds-blockchain library. If not, see <http://www.gnu.org/licenses/>.
+// along with the go-scft library. If not, see <http://www.gnu.org/licenses/>.
 
 // Package bind generates Ethereum contract Go bindings.
 //
-// Detailed usage document and tutorial available on the smartcrowdfunds-blockchain Wiki page:
-// https://github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/wiki/Native-DApps:-Go-bindings-to-Ethereum-contracts
+// Detailed usage document and tutorial available on the go-scft Wiki page:
+// https://github.com/SmartCrowdFunds/go-scft/wiki/Native-DApps:-Go-bindings-to-Ethereum-contracts
 package bind
 
 import (
@@ -28,7 +28,7 @@ import (
 	"text/template"
 	"unicode"
 
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/accounts/abi"
+	"github.com/SmartCrowdFunds/go-scft/accounts/abi"
 	"golang.org/x/tools/imports"
 )
 

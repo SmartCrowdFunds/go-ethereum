@@ -5,12 +5,12 @@ package eth
 import (
 	"math/big"
 
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/common"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/common/hexutil"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/consensus/ethash"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/core"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/eth/downloader"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/eth/gasprice"
+	"github.com/SmartCrowdFunds/go-scft/common"
+	"github.com/SmartCrowdFunds/go-scft/common/hexutil"
+	"github.com/SmartCrowdFunds/go-scft/consensus/ethash"
+	"github.com/SmartCrowdFunds/go-scft/core"
+	"github.com/SmartCrowdFunds/go-scft/eth/downloader"
+	"github.com/SmartCrowdFunds/go-scft/eth/gasprice"
 )
 
 var _ = (*configMarshaling)(nil)

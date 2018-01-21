@@ -28,5 +28,5 @@ test:
     - cp ./build/bin/gscf $HOME/gscf
 
     # Run hive and move all generated logs into the public artifacts folder
-    - (cd ~/.go_workspace/src/github.com/karalabe/hive && hive --docker-noshell --client=smartcrowdfunds-blockchain:local --override=$HOME/gscf --test=. --sim=.)
+    - (cd ~/.go_workspace/src/github.com/karalabe/hive && hive --docker-noshell --client=go-scft:local --override=$HOME/gscf --test=. --sim=.)
     - cp -r ~/.go_workspace/src/github.com/karalabe/hive/workspace/logs/* $CIRCLE_ARTIFACTS

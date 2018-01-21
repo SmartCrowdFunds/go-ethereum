@@ -1,18 +1,18 @@
-// Copyright 2017 The smartcrowdfunds-blockchain Authors
-// This file is part of smartcrowdfunds-blockchain.
+// Copyright 2017 The go-scft Authors
+// This file is part of go-scft.
 //
-// smartcrowdfunds-blockchain is free software: you can redistribute it and/or modify
+// go-scft is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
 // (at your option) any later version.
 //
-// smartcrowdfunds-blockchain is distributed in the hope that it will be useful,
+// go-scft is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with smartcrowdfunds-blockchain. If not, see <http://www.gnu.org/licenses/>.
+// along with go-scft. If not, see <http://www.gnu.org/licenses/>.
 
 package main
 
@@ -22,9 +22,9 @@ import (
 	"io/ioutil"
 	"strings"
 
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/cmd/utils"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/console"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/crypto"
+	"github.com/SmartCrowdFunds/go-scft/cmd/utils"
+	"github.com/SmartCrowdFunds/go-scft/console"
+	"github.com/SmartCrowdFunds/go-scft/crypto"
 	"gopkg.in/urfave/cli.v1"
 )
 

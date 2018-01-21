@@ -1,18 +1,18 @@
-// Copyright 2016 The smartcrowdfunds-blockchain Authors
-// This file is part of the smartcrowdfunds-blockchain library.
+// Copyright 2016 The go-scft Authors
+// This file is part of the go-scft library.
 //
-// The smartcrowdfunds-blockchain library is free software: you can redistribute it and/or modify
+// The go-scft library is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Lesser General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
 // (at your option) any later version.
 //
-// The smartcrowdfunds-blockchain library is distributed in the hope that it will be useful,
+// The go-scft library is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the smartcrowdfunds-blockchain library. If not, see <http://www.gnu.org/licenses/>.
+// along with the go-scft library. If not, see <http://www.gnu.org/licenses/>.
 
 package abi
 
@@ -25,8 +25,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/common"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/crypto"
+	"github.com/SmartCrowdFunds/go-scft/common"
+	"github.com/SmartCrowdFunds/go-scft/crypto"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )
@@ -244,7 +244,7 @@ func unpackTestEventData(dest interface{}, hexData string, jsonEvent []byte, ass
 
 /*
 Taken from
-https://github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/pull/15568
+https://github.com/SmartCrowdFunds/go-scft/pull/15568
 */
 
 type testResult struct {

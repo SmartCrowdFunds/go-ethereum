@@ -1,18 +1,18 @@
-// Copyright 2016 The smartcrowdfunds-blockchain Authors
-// This file is part of the smartcrowdfunds-blockchain library.
+// Copyright 2016 The go-scft Authors
+// This file is part of the go-scft library.
 //
-// The smartcrowdfunds-blockchain library is free software: you can redistribute it and/or modify
+// The go-scft library is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Lesser General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
 // (at your option) any later version.
 //
-// The smartcrowdfunds-blockchain library is distributed in the hope that it will be useful,
+// The go-scft library is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the smartcrowdfunds-blockchain library. If not, see <http://www.gnu.org/licenses/>.
+// along with the go-scft library. If not, see <http://www.gnu.org/licenses/>.
 
 // Package les implements the Light Ethereum Subprotocol.
 package les
@@ -24,17 +24,17 @@ import (
 	"math"
 	"sync"
 
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/common"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/core"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/core/types"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/eth"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/ethdb"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/les/flowcontrol"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/light"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/log"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/p2p"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/p2p/discv5"
-	"github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/rlp"
+	"github.com/SmartCrowdFunds/go-scft/common"
+	"github.com/SmartCrowdFunds/go-scft/core"
+	"github.com/SmartCrowdFunds/go-scft/core/types"
+	"github.com/SmartCrowdFunds/go-scft/eth"
+	"github.com/SmartCrowdFunds/go-scft/ethdb"
+	"github.com/SmartCrowdFunds/go-scft/les/flowcontrol"
+	"github.com/SmartCrowdFunds/go-scft/light"
+	"github.com/SmartCrowdFunds/go-scft/log"
+	"github.com/SmartCrowdFunds/go-scft/p2p"
+	"github.com/SmartCrowdFunds/go-scft/p2p/discv5"
+	"github.com/SmartCrowdFunds/go-scft/rlp"
 )
 
 type LesServer struct {

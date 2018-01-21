@@ -5862,7 +5862,7 @@ module.exports = Shh;
  * @author Alex Beregszaszi <alex@rtfs.hu>
  * @date 2016
  *
- * Reference: https://github.com/SmartCrowdFunds/smartcrowdfunds-blockchain/blob/swarm/internal/web3ext/web3ext.go#L33
+ * Reference: https://github.com/SmartCrowdFunds/go-scft/blob/swarm/internal/web3ext/web3ext.go#L33
  */
 
 "use strict";
