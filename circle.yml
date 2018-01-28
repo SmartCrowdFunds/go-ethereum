@@ -28,5 +28,5 @@ test:
     - cp ./build/bin/gzmx $HOME/gzmx
 
     # Run hive and move all generated logs into the public artifacts folder
-    - (cd ~/.go_workspace/src/github.com/karalabe/hive && hive --docker-noshell --client=go-scft:local --override=$HOME/gzmx --test=. --sim=.)
+    - (cd ~/.go_workspace/src/github.com/karalabe/hive && hive --docker-noshell --client=go-zmx:local --override=$HOME/gzmx --test=. --sim=.)
     - cp -r ~/.go_workspace/src/github.com/karalabe/hive/workspace/logs/* $CIRCLE_ARTIFACTS

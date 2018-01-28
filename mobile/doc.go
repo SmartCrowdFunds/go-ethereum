@@ -1,23 +1,23 @@
-// Copyright 2016 The go-scft Authors
-// This file is part of the go-scft library.
+// Copyright 2016 The go-zmx Authors
+// This file is part of the go-zmx library.
 //
-// The go-scft library is free software: you can redistribute it and/or modify
+// The go-zmx library is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Lesser General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
 // (at your option) any later version.
 //
-// The go-scft library is distributed in the hope that it will be useful,
+// The go-zmx library is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the go-scft library. If not, see <http://www.gnu.org/licenses/>.
+// along with the go-zmx library. If not, see <http://www.gnu.org/licenses/>.
 
-// Package gzmx contains the simplified mobile APIs to go-scft.
+// Package gzmx contains the simplified mobile APIs to go-zmx.
 //
 // The scope of this package is *not* to allow writing a custom Ethereum client
-// with pieces plucked from go-scft, rather to allow writing native dapps on
+// with pieces plucked from go-zmx, rather to allow writing native dapps on
 // mobile platforms. Keep this in mind when using or extending this package!
 //
 // API limitations
@@ -33,13 +33,13 @@
 // writing custom library generators, but those are out of scope now.
 //
 // Content wise each file in this package corresponds to an entire Go package
-// from the go-scft repository. Please adhere to this scoping to prevent this
+// from the go-zmx repository. Please adhere to this scoping to prevent this
 // package getting unmaintainable.
 //
 // Wrapping guidelines:
 //
 // Every type that is to be exposed should be wrapped into its own plain struct,
-// which internally contains a single field: the original go-scft version.
+// which internally contains a single field: the original go-zmx version.
 // This is needed because gomobile cannot expose named types for now.
 //
 // Whenever a method argument or a return type is a custom struct, the pointer

@@ -1,18 +1,18 @@
-// Copyright 2015 The go-scft Authors
-// This file is part of the go-scft library.
+// Copyright 2015 The go-zmx Authors
+// This file is part of the go-zmx library.
 //
-// The go-scft library is free software: you can redistribute it and/or modify
+// The go-zmx library is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Lesser General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
 // (at your option) any later version.
 //
-// The go-scft library is distributed in the hope that it will be useful,
+// The go-zmx library is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the go-scft library. If not, see <http://www.gnu.org/licenses/>.
+// along with the go-zmx library. If not, see <http://www.gnu.org/licenses/>.
 
 // Package secp256k1 wraps the bitcoin secp256k1 C library.
 package secp256k1

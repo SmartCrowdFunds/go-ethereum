@@ -10,7 +10,7 @@
   <packaging>aar</packaging>
 
   <name>Android Ethereum Client</name>
-  <description>Android port of the go-scft libraries and node</description>
+  <description>Android port of the go-zmx libraries and node</description>
   <url>https://github.com/Zamolxes-ZMX/go-zmx</url>
   <inceptionYear>2015</inceptionYear>
 

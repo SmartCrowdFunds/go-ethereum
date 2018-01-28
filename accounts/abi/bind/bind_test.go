@@ -1,18 +1,18 @@
-// Copyright 2016 The go-scft Authors
-// This file is part of the go-scft library.
+// Copyright 2016 The go-zmx Authors
+// This file is part of the go-zmx library.
 //
-// The go-scft library is free software: you can redistribute it and/or modify
+// The go-zmx library is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Lesser General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
 // (at your option) any later version.
 //
-// The go-scft library is distributed in the hope that it will be useful,
+// The go-zmx library is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the go-scft library. If not, see <http://www.gnu.org/licenses/>.
+// along with the go-zmx library. If not, see <http://www.gnu.org/licenses/>.
 
 package bind
 
@@ -518,13 +518,13 @@ func TestBindings(t *testing.T) {
 	if !common.FileExist(gocmd) {
 		t.Skip("go sdk not found for testing")
 	}
-	// Skip the test if the go-scft sources are symlinked (https://github.com/golang/go/issues/14845)
+	// Skip the test if the go-zmx sources are symlinked (https://github.com/golang/go/issues/14845)
 	linkTestCode := fmt.Sprintf("package linktest\nfunc CheckSymlinks(){\nfmt.Println(backends.NewSimulatedBackend(nil))\n}")
 	linkTestDeps, err := imports.Process(os.TempDir(), []byte(linkTestCode), nil)
 	if err != nil {
 		t.Fatalf("failed check for goimports symlink bug: %v", err)
 	}
-	if !strings.Contains(string(linkTestDeps), "go-scft") {
+	if !strings.Contains(string(linkTestDeps), "go-zmx") {
 		t.Skip("symlinked environment doesn't support bind (https://github.com/golang/go/issues/14845)")
 	}
 	// Create a temporary workspace for the test suite
