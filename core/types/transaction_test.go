@@ -29,7 +29,7 @@ import (
 )
 
 // The values in those tests are from the Transaction Tests
-// at github.com/SmartCrowdFunds/tests.
+// at github.com/Zamolxes-ZMX/tests.
 var (
 	emptyTx = NewTransaction(
 		0,

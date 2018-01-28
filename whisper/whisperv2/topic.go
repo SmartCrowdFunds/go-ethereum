@@ -15,7 +15,7 @@
 // along with the go-zmx library. If not, see <http://www.gnu.org/licenses/>.
 
 // Contains the Whisper protocol Topic element. For formal details please see
-// the specs at https://github.com/SmartCrowdFunds/wiki/wiki/Whisper-PoC-1-Protocol-Spec#topics.
+// the specs at https://github.com/Zamolxes-ZMX/wiki/wiki/Whisper-PoC-1-Protocol-Spec#topics.
 
 package whisperv2
 

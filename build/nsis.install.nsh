@@ -33,7 +33,7 @@ Section "gzmx" gzmx_IDX
   SimpleFC::AdvAddRule "gzmx outgoing peers (TCP:30303)" ""  6 2 1 2147483647 1 "$INSTDIR\gzmx.exe" "" "" "Ethereum" "" 30303 "" ""
   SimpleFC::AdvAddRule "gzmx UDP discovery (UDP:30303)" "" 17 2 1 2147483647 1 "$INSTDIR\gzmx.exe" "" "" "Ethereum" "" 30303 "" ""
 
-  # Set default IPC endpoint (https://github.com/SmartCrowdFunds/EIPs/issues/147)
+  # Set default IPC endpoint (https://github.com/Zamolxes-ZMX/EIPs/issues/147)
   ${EnvVarUpdate} $0 "ETHEREUM_SOCKET" "R" "HKLM" "\\.\pipe\gzmx.ipc"
   ${EnvVarUpdate} $0 "ETHEREUM_SOCKET" "A" "HKLM" "\\.\pipe\gzmx.ipc"
 

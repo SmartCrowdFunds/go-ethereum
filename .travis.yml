@@ -157,8 +157,8 @@ matrix:
         - mv android-ndk-r15c $HOME
         - export ANDROID_NDK=$HOME/android-ndk-r15c
 
-        - mkdir -p $GOPATH/src/github.com/SmartCrowdFunds
-        - ln -s `pwd` $GOPATH/src/github.com/SmartCrowdFunds
+        - mkdir -p $GOPATH/src/github.com/Zamolxes-ZMX
+        - ln -s `pwd` $GOPATH/src/github.com/Zamolxes-ZMX
         - go run build/ci.go aar -signer ANDROID_SIGNING_KEY -deploy https://oss.sonatype.org -upload gzmxstore/builds
 
     # This builder does the OSX Azure, iOS CocoaPods and iOS Azure uploads

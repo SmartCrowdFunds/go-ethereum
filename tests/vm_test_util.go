@@ -34,7 +34,7 @@ import (
 )
 
 // VMTest checks EVM execution without block or transaction context.
-// See https://github.com/SmartCrowdFunds/tests/wiki/VM-Tests for the test format specification.
+// See https://github.com/Zamolxes-ZMX/tests/wiki/VM-Tests for the test format specification.
 type VMTest struct {
 	json vmJSON
 }
