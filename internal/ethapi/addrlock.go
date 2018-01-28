@@ -19,7 +19,7 @@ package ethapi
 import (
 	"sync"
 
-	"github.com/SmartCrowdFunds/go-scft/common"
+	"github.com/Zamolxes-ZMX/go-zmx/common"
 )
 
 type AddrLocker struct {

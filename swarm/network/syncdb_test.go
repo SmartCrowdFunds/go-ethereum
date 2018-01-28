@@ -25,9 +25,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/SmartCrowdFunds/go-scft/crypto"
-	"github.com/SmartCrowdFunds/go-scft/log"
-	"github.com/SmartCrowdFunds/go-scft/swarm/storage"
+	"github.com/Zamolxes-ZMX/go-zmx/crypto"
+	"github.com/Zamolxes-ZMX/go-zmx/log"
+	"github.com/Zamolxes-ZMX/go-zmx/swarm/storage"
 )
 
 func init() {

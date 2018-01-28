@@ -19,8 +19,8 @@ package les
 import (
 	"time"
 
-	"github.com/SmartCrowdFunds/go-scft/common/bitutil"
-	"github.com/SmartCrowdFunds/go-scft/light"
+	"github.com/Zamolxes-ZMX/go-zmx/common/bitutil"
+	"github.com/Zamolxes-ZMX/go-zmx/light"
 )
 
 const (

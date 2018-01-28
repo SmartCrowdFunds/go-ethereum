@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/SmartCrowdFunds/go-scft/cmd/utils"
+	"github.com/Zamolxes-ZMX/go-zmx/cmd/utils"
 	"gopkg.in/urfave/cli.v1"
 )
 

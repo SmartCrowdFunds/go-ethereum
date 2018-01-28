@@ -23,8 +23,8 @@ import (
 	"math/rand"
 	"reflect"
 
-	"github.com/SmartCrowdFunds/go-scft/common/hexutil"
-	"github.com/SmartCrowdFunds/go-scft/crypto/sha3"
+	"github.com/Zamolxes-ZMX/go-zmx/common/hexutil"
+	"github.com/Zamolxes-ZMX/go-zmx/crypto/sha3"
 )
 
 const (

@@ -23,12 +23,12 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/SmartCrowdFunds/go-scft/common"
-	"github.com/SmartCrowdFunds/go-scft/core/types"
-	"github.com/SmartCrowdFunds/go-scft/crypto"
-	"github.com/SmartCrowdFunds/go-scft/log"
-	"github.com/SmartCrowdFunds/go-scft/rlp"
-	"github.com/SmartCrowdFunds/go-scft/trie"
+	"github.com/Zamolxes-ZMX/go-zmx/common"
+	"github.com/Zamolxes-ZMX/go-zmx/core/types"
+	"github.com/Zamolxes-ZMX/go-zmx/crypto"
+	"github.com/Zamolxes-ZMX/go-zmx/log"
+	"github.com/Zamolxes-ZMX/go-zmx/rlp"
+	"github.com/Zamolxes-ZMX/go-zmx/trie"
 )
 
 type revision struct {

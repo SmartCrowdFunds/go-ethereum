@@ -22,12 +22,12 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/SmartCrowdFunds/go-scft/common"
-	"github.com/SmartCrowdFunds/go-scft/common/hexutil"
-	"github.com/SmartCrowdFunds/go-scft/common/math"
-	"github.com/SmartCrowdFunds/go-scft/core/types"
-	"github.com/SmartCrowdFunds/go-scft/params"
-	"github.com/SmartCrowdFunds/go-scft/rlp"
+	"github.com/Zamolxes-ZMX/go-zmx/common"
+	"github.com/Zamolxes-ZMX/go-zmx/common/hexutil"
+	"github.com/Zamolxes-ZMX/go-zmx/common/math"
+	"github.com/Zamolxes-ZMX/go-zmx/core/types"
+	"github.com/Zamolxes-ZMX/go-zmx/params"
+	"github.com/Zamolxes-ZMX/go-zmx/rlp"
 )
 
 // TransactionTest checks RLP decoding and sender derivation of transactions.

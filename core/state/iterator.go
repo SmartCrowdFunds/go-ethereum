@@ -20,9 +20,9 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/SmartCrowdFunds/go-scft/common"
-	"github.com/SmartCrowdFunds/go-scft/rlp"
-	"github.com/SmartCrowdFunds/go-scft/trie"
+	"github.com/Zamolxes-ZMX/go-zmx/common"
+	"github.com/Zamolxes-ZMX/go-zmx/rlp"
+	"github.com/Zamolxes-ZMX/go-zmx/trie"
 )
 
 // NodeIterator is an iterator to traverse the entire state trie post-order,

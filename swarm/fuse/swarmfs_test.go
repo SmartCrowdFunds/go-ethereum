@@ -27,8 +27,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/SmartCrowdFunds/go-scft/swarm/api"
-	"github.com/SmartCrowdFunds/go-scft/swarm/storage"
+	"github.com/Zamolxes-ZMX/go-zmx/swarm/api"
+	"github.com/Zamolxes-ZMX/go-zmx/swarm/storage"
 )
 
 type fileInfo struct {

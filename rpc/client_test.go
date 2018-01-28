@@ -31,7 +31,7 @@ import (
 	"time"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/SmartCrowdFunds/go-scft/log"
+	"github.com/Zamolxes-ZMX/go-zmx/log"
 )
 
 func TestClientRequest(t *testing.T) {

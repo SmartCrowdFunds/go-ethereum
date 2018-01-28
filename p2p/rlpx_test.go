@@ -31,11 +31,11 @@ import (
 	"time"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/SmartCrowdFunds/go-scft/crypto"
-	"github.com/SmartCrowdFunds/go-scft/crypto/ecies"
-	"github.com/SmartCrowdFunds/go-scft/crypto/sha3"
-	"github.com/SmartCrowdFunds/go-scft/p2p/discover"
-	"github.com/SmartCrowdFunds/go-scft/rlp"
+	"github.com/Zamolxes-ZMX/go-zmx/crypto"
+	"github.com/Zamolxes-ZMX/go-zmx/crypto/ecies"
+	"github.com/Zamolxes-ZMX/go-zmx/crypto/sha3"
+	"github.com/Zamolxes-ZMX/go-zmx/p2p/discover"
+	"github.com/Zamolxes-ZMX/go-zmx/rlp"
 )
 
 func TestSharedSecret(t *testing.T) {

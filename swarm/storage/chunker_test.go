@@ -27,7 +27,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/SmartCrowdFunds/go-scft/crypto/sha3"
+	"github.com/Zamolxes-ZMX/go-zmx/crypto/sha3"
 )
 
 /*

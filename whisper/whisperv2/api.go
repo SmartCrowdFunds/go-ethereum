@@ -22,9 +22,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/SmartCrowdFunds/go-scft/common"
-	"github.com/SmartCrowdFunds/go-scft/common/hexutil"
-	"github.com/SmartCrowdFunds/go-scft/crypto"
+	"github.com/Zamolxes-ZMX/go-zmx/common"
+	"github.com/Zamolxes-ZMX/go-zmx/common/hexutil"
+	"github.com/Zamolxes-ZMX/go-zmx/crypto"
 )
 
 // PublicWhisperAPI provides the whisper RPC service.

@@ -21,11 +21,11 @@ import (
 	"net"
 	"time"
 
-	"github.com/SmartCrowdFunds/go-scft/contracts/chequebook"
-	"github.com/SmartCrowdFunds/go-scft/p2p/discover"
-	"github.com/SmartCrowdFunds/go-scft/swarm/network/kademlia"
-	"github.com/SmartCrowdFunds/go-scft/swarm/services/swap"
-	"github.com/SmartCrowdFunds/go-scft/swarm/storage"
+	"github.com/Zamolxes-ZMX/go-zmx/contracts/chequebook"
+	"github.com/Zamolxes-ZMX/go-zmx/p2p/discover"
+	"github.com/Zamolxes-ZMX/go-zmx/swarm/network/kademlia"
+	"github.com/Zamolxes-ZMX/go-zmx/swarm/services/swap"
+	"github.com/Zamolxes-ZMX/go-zmx/swarm/storage"
 )
 
 /*

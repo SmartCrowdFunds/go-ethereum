@@ -25,14 +25,14 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/SmartCrowdFunds/go-scft/accounts"
-	"github.com/SmartCrowdFunds/go-scft/accounts/keystore"
-	"github.com/SmartCrowdFunds/go-scft/accounts/usbwallet"
-	"github.com/SmartCrowdFunds/go-scft/common"
-	"github.com/SmartCrowdFunds/go-scft/crypto"
-	"github.com/SmartCrowdFunds/go-scft/log"
-	"github.com/SmartCrowdFunds/go-scft/p2p"
-	"github.com/SmartCrowdFunds/go-scft/p2p/discover"
+	"github.com/Zamolxes-ZMX/go-zmx/accounts"
+	"github.com/Zamolxes-ZMX/go-zmx/accounts/keystore"
+	"github.com/Zamolxes-ZMX/go-zmx/accounts/usbwallet"
+	"github.com/Zamolxes-ZMX/go-zmx/common"
+	"github.com/Zamolxes-ZMX/go-zmx/crypto"
+	"github.com/Zamolxes-ZMX/go-zmx/log"
+	"github.com/Zamolxes-ZMX/go-zmx/p2p"
+	"github.com/Zamolxes-ZMX/go-zmx/p2p/discover"
 )
 
 const (
@@ -48,7 +48,7 @@ const (
 // all registered services.
 type Config struct {
 	// Name sets the instance name of the node. It must not contain the / character and is
-	// used in the devp2p node identifier. The instance name of gscf is "gscf". If no
+	// used in the devp2p node identifier. The instance name of gzmx is "gzmx". If no
 	// value is specified, the basename of the current executable is used.
 	Name string `toml:"-"`
 
@@ -218,9 +218,9 @@ func DefaultWSEndpoint() string {
 // NodeName returns the devp2p node identifier.
 func (c *Config) NodeName() string {
 	name := c.name()
-	// Backwards compatibility: previous versions used title-cased "Gscf", keep that.
-	if name == "gscf" || name == "gscf-testnet" {
-		name = "Gscf"
+	// Backwards compatibility: previous versions used title-cased "gzmx", keep that.
+	if name == "gzmx" || name == "gzmx-testnet" {
+		name = "gzmx"
 	}
 	if c.UserIdent != "" {
 		name += "/" + c.UserIdent
@@ -244,8 +244,8 @@ func (c *Config) name() string {
 	return c.Name
 }
 
-// These resources are resolved differently for "gscf" instances.
-var isOldGscfResource = map[string]bool{
+// These resources are resolved differently for "gzmx" instances.
+var isOldgzmxResource = map[string]bool{
 	"chaindata":          true,
 	"nodes":              true,
 	"nodekey":            true,
@@ -262,10 +262,10 @@ func (c *Config) resolvePath(path string) string {
 		return ""
 	}
 	// Backwards-compatibility: ensure that data directory files created
-	// by gscf 1.4 are used if they exist.
-	if c.name() == "gscf" && isOldGscfResource[path] {
+	// by gzmx 1.4 are used if they exist.
+	if c.name() == "gzmx" && isOldgzmxResource[path] {
 		oldpath := ""
-		if c.Name == "gscf" {
+		if c.Name == "gzmx" {
 			oldpath = filepath.Join(c.DataDir, path)
 		}
 		if oldpath != "" && common.FileExist(oldpath) {

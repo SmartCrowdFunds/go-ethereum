@@ -20,7 +20,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/SmartCrowdFunds/go-scft/common"
+	"github.com/Zamolxes-ZMX/go-zmx/common"
 )
 
 // Tests that the node iterator indeed walks over the entire database contents.

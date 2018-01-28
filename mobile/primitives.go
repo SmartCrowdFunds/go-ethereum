@@ -16,7 +16,7 @@
 
 // Contains various wrappers for primitive types.
 
-package gscf
+package gzmx
 
 import (
 	"errors"

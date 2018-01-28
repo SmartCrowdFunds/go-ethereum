@@ -22,8 +22,8 @@ import (
 	"fmt"
 	"path/filepath"
 
-	"github.com/SmartCrowdFunds/go-scft/log"
-	"github.com/SmartCrowdFunds/go-scft/swarm/storage"
+	"github.com/Zamolxes-ZMX/go-zmx/log"
+	"github.com/Zamolxes-ZMX/go-zmx/swarm/storage"
 )
 
 // syncer parameters (global, not peer specific) default values

@@ -29,9 +29,9 @@ import (
 
 	"bazil.org/fuse"
 	"bazil.org/fuse/fs"
-	"github.com/SmartCrowdFunds/go-scft/common"
-	"github.com/SmartCrowdFunds/go-scft/log"
-	"github.com/SmartCrowdFunds/go-scft/swarm/api"
+	"github.com/Zamolxes-ZMX/go-zmx/common"
+	"github.com/Zamolxes-ZMX/go-zmx/log"
+	"github.com/Zamolxes-ZMX/go-zmx/swarm/api"
 )
 
 var (

@@ -27,9 +27,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/SmartCrowdFunds/go-scft/accounts"
-	"github.com/SmartCrowdFunds/go-scft/common"
-	"github.com/SmartCrowdFunds/go-scft/log"
+	"github.com/Zamolxes-ZMX/go-zmx/accounts"
+	"github.com/Zamolxes-ZMX/go-zmx/common"
+	"github.com/Zamolxes-ZMX/go-zmx/log"
 	"gopkg.in/fatih/set.v0"
 )
 

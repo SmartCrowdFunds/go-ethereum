@@ -23,9 +23,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/SmartCrowdFunds/go-scft/accounts/usbwallet"
-	"github.com/SmartCrowdFunds/go-scft/log"
-	"github.com/SmartCrowdFunds/go-scft/rpc"
+	"github.com/Zamolxes-ZMX/go-zmx/accounts/usbwallet"
+	"github.com/Zamolxes-ZMX/go-zmx/log"
+	"github.com/Zamolxes-ZMX/go-zmx/rpc"
 	"github.com/robertkrimen/otto"
 )
 

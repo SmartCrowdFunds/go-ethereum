@@ -21,11 +21,11 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/SmartCrowdFunds/go-scft/accounts/abi"
-	"github.com/SmartCrowdFunds/go-scft/common"
-	"github.com/SmartCrowdFunds/go-scft/core/state"
-	"github.com/SmartCrowdFunds/go-scft/core/vm"
-	"github.com/SmartCrowdFunds/go-scft/ethdb"
+	"github.com/Zamolxes-ZMX/go-zmx/accounts/abi"
+	"github.com/Zamolxes-ZMX/go-zmx/common"
+	"github.com/Zamolxes-ZMX/go-zmx/core/state"
+	"github.com/Zamolxes-ZMX/go-zmx/core/vm"
+	"github.com/Zamolxes-ZMX/go-zmx/ethdb"
 )
 
 func TestDefaults(t *testing.T) {

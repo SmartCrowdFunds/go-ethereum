@@ -14,12 +14,12 @@
 // You should have received a copy of the GNU Lesser General Public License
 // along with the go-scft library. If not, see <http://www.gnu.org/licenses/>.
 
-package gscf
+package gzmx
 
 import (
 	"os"
 
-	"github.com/SmartCrowdFunds/go-scft/log"
+	"github.com/Zamolxes-ZMX/go-zmx/log"
 )
 
 // SetVerbosity sets the global verbosity level (between 0 and 6 - see logger/verbosity.go).

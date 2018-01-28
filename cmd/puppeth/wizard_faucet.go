@@ -20,8 +20,8 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/SmartCrowdFunds/go-scft/accounts/keystore"
-	"github.com/SmartCrowdFunds/go-scft/log"
+	"github.com/Zamolxes-ZMX/go-zmx/accounts/keystore"
+	"github.com/Zamolxes-ZMX/go-zmx/log"
 )
 
 // deployFaucet queries the user for various input on deploying a faucet, after

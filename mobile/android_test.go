@@ -14,7 +14,7 @@
 // You should have received a copy of the GNU Lesser General Public License
 // along with the go-scft library. If not, see <http://www.gnu.org/licenses/>.
 
-package gscf
+package gzmx
 
 import (
 	"io/ioutil"
@@ -25,7 +25,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/SmartCrowdFunds/go-scft/internal/build"
+	"github.com/Zamolxes-ZMX/go-zmx/internal/build"
 )
 
 // androidTestClass is a Java class to do some lightweight tests against the Android
@@ -40,14 +40,14 @@ import android.test.MoreAsserts;
 import java.math.BigInteger;
 import java.util.Arrays;
 
-import org.ethereum.gscf.*;
+import org.ethereum.gzmx.*;
 
 public class AndroidTest extends InstrumentationTestCase {
 	public AndroidTest() {}
 
 	public void testAccountManagement() {
 		// Create an encrypted keystore with light crypto parameters.
-		KeyStore ks = new KeyStore(getInstrumentation().getContext().getFilesDir() + "/keystore", Gscf.LightScryptN, Gscf.LightScryptP);
+		KeyStore ks = new KeyStore(getInstrumentation().getContext().getFilesDir() + "/keystore", gzmx.LightScryptN, gzmx.LightScryptP);
 
 		try {
 			// Create a new account with the specified encryption passphrase.
@@ -96,7 +96,7 @@ public class AndroidTest extends InstrumentationTestCase {
 
 		try {
 			// Start up a new inprocess node
-			Node node = new Node(getInstrumentation().getContext().getFilesDir() + "/.gscf", new NodeConfig());
+			Node node = new Node(getInstrumentation().getContext().getFilesDir() + "/.gzmx", new NodeConfig());
 			node.start();
 
 			// Retrieve some data via function calls (we don't really care about the results)
@@ -155,7 +155,7 @@ public class AndroidTest extends InstrumentationTestCase {
 //
 // This method has been adapted from golang.org/x/mobile/bind/java/seq_test.go/runTest
 func TestAndroid(t *testing.T) {
-	// Skip tests on Windows altogscfer
+	// Skip tests on Windows altogzmxer
 	if runtime.GOOS == "windows" {
 		t.Skip("cannot test Android bindings on Windows, skipping")
 	}
@@ -179,7 +179,7 @@ func TestAndroid(t *testing.T) {
 		t.Logf("initialization took %v", time.Since(start))
 	}
 	// Create and switch to a temporary workspace
-	workspace, err := ioutil.TempDir("", "gscf-android-")
+	workspace, err := ioutil.TempDir("", "gzmx-android-")
 	if err != nil {
 		t.Fatalf("failed to create temporary workspace: %v", err)
 	}
@@ -195,21 +195,21 @@ func TestAndroid(t *testing.T) {
 	defer os.Chdir(pwd)
 
 	// Create the skeleton of the Android project
-	for _, dir := range []string{"src/main", "src/androidTest/java/org/ethereum/gscftest", "libs"} {
+	for _, dir := range []string{"src/main", "src/androidTest/java/org/ethereum/gzmxtest", "libs"} {
 		err = os.MkdirAll(dir, os.ModePerm)
 		if err != nil {
 			t.Fatal(err)
 		}
 	}
-	// Generate the mobile bindings for Gscf and add the tester class
-	gobind := exec.Command("gomobile", "bind", "-javapkg", "org.ethereum", "github.com/SmartCrowdFunds/go-scft/mobile")
+	// Generate the mobile bindings for gzmx and add the tester class
+	gobind := exec.Command("gomobile", "bind", "-javapkg", "org.ethereum", "github.com/Zamolxes-ZMX/go-zmx/mobile")
 	if output, err := gobind.CombinedOutput(); err != nil {
 		t.Logf("%s", output)
 		t.Fatalf("failed to run gomobile bind: %v", err)
 	}
-	build.CopyFile(filepath.Join("libs", "gscf.aar"), "gscf.aar", os.ModePerm)
+	build.CopyFile(filepath.Join("libs", "gzmx.aar"), "gzmx.aar", os.ModePerm)
 
-	if err = ioutil.WriteFile(filepath.Join("src", "androidTest", "java", "org", "ethereum", "gscftest", "AndroidTest.java"), []byte(androidTestClass), os.ModePerm); err != nil {
+	if err = ioutil.WriteFile(filepath.Join("src", "androidTest", "java", "org", "ethereum", "gzmxtest", "AndroidTest.java"), []byte(androidTestClass), os.ModePerm); err != nil {
 		t.Fatalf("failed to write Android test class: %v", err)
 	}
 	// Finish creating the project and run the tests via gradle
@@ -227,7 +227,7 @@ func TestAndroid(t *testing.T) {
 
 const androidManifest = `<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="org.ethereum.gscftest"
+          package="org.ethereum.gzmxtest"
 	  android:versionCode="1"
 	  android:versionName="1.0">
 
@@ -256,6 +256,6 @@ repositories {
 }
 dependencies {
     compile 'com.android.support:appcompat-v7:19.0.0'
-    compile(name: "gscf", ext: "aar")
+    compile(name: "gzmx", ext: "aar")
 }
 `

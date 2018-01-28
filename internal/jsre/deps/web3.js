@@ -1231,7 +1231,7 @@ SolidityParam.prototype.withOffset = function (offset) {
 };
 
 /**
- * This method should be used to combine solidity params togscfer
+ * This method should be used to combine solidity params togzmxer
  * eg. when appending an array
  *
  * @method combine
@@ -1779,7 +1779,7 @@ var ETH_UNITS = [
     'ether',
     'grand',
     'Mether',
-    'Gscfer',
+    'gzmxer',
     'Tether',
     'Pether',
     'Eether',
@@ -1909,7 +1909,7 @@ var unitMap = {
     'kether':       '1000000000000000000000',
     'grand':        '1000000000000000000000',
     'mether':       '1000000000000000000000000',
-    'gscfer':       '1000000000000000000000000000',
+    'gzmxer':       '1000000000000000000000000000',
     'tether':       '1000000000000000000000000000000'
 };
 
@@ -2150,7 +2150,7 @@ var getValueOfUnit = function (unit) {
  * - ether      --             --
  * - kether                    --           grand
  * - mether
- * - gscfer
+ * - gzmxer
  * - tether
  *
  * @method fromWei
@@ -2178,7 +2178,7 @@ var fromWei = function(number, unit) {
  * - ether      --             --
  * - kether                    --           grand
  * - mether
- * - gscfer
+ * - gzmxer
  * - tether
  *
  * @method toWei
@@ -3239,7 +3239,7 @@ SolidityEvent.prototype.signature = function () {
  * @method encode
  * @param {Object} indexed
  * @param {Object} options
- * @return {Object} everything combined togscfer and encoded
+ * @return {Object} everything combined togzmxer and encoded
  */
 SolidityEvent.prototype.encode = function (indexed, options) {
     indexed = indexed || {};
@@ -5862,7 +5862,7 @@ module.exports = Shh;
  * @author Alex Beregszaszi <alex@rtfs.hu>
  * @date 2016
  *
- * Reference: https://github.com/SmartCrowdFunds/go-scft/blob/swarm/internal/web3ext/web3ext.go#L33
+ * Reference: https://github.com/Zamolxes-ZMX/go-zmx/blob/swarm/internal/web3ext/web3ext.go#L33
  */
 
 "use strict";

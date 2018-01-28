@@ -5,7 +5,7 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/SmartCrowdFunds/go-scft/common"
+	"github.com/Zamolxes-ZMX/go-zmx/common"
 )
 
 // precompiledTest defines the input/output pairs for precompiled contract tests.

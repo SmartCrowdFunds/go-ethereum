@@ -26,11 +26,11 @@ import (
 	"io"
 	"math/big"
 
-	"github.com/SmartCrowdFunds/go-scft/common"
-	"github.com/SmartCrowdFunds/go-scft/core"
-	"github.com/SmartCrowdFunds/go-scft/crypto"
-	"github.com/SmartCrowdFunds/go-scft/crypto/secp256k1"
-	"github.com/SmartCrowdFunds/go-scft/rlp"
+	"github.com/Zamolxes-ZMX/go-zmx/common"
+	"github.com/Zamolxes-ZMX/go-zmx/core"
+	"github.com/Zamolxes-ZMX/go-zmx/crypto"
+	"github.com/Zamolxes-ZMX/go-zmx/crypto/secp256k1"
+	"github.com/Zamolxes-ZMX/go-zmx/rlp"
 )
 
 // Constants to match up protocol versions and messages

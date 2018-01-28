@@ -23,11 +23,11 @@ package ens
 import (
 	"strings"
 
-	"github.com/SmartCrowdFunds/go-scft/accounts/abi/bind"
-	"github.com/SmartCrowdFunds/go-scft/common"
-	"github.com/SmartCrowdFunds/go-scft/contracts/ens/contract"
-	"github.com/SmartCrowdFunds/go-scft/core/types"
-	"github.com/SmartCrowdFunds/go-scft/crypto"
+	"github.com/Zamolxes-ZMX/go-zmx/accounts/abi/bind"
+	"github.com/Zamolxes-ZMX/go-zmx/common"
+	"github.com/Zamolxes-ZMX/go-zmx/contracts/ens/contract"
+	"github.com/Zamolxes-ZMX/go-zmx/core/types"
+	"github.com/Zamolxes-ZMX/go-zmx/crypto"
 )
 
 var (

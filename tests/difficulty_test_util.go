@@ -21,11 +21,11 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/SmartCrowdFunds/go-scft/common"
-	"github.com/SmartCrowdFunds/go-scft/common/math"
-	"github.com/SmartCrowdFunds/go-scft/consensus/ethash"
-	"github.com/SmartCrowdFunds/go-scft/core/types"
-	"github.com/SmartCrowdFunds/go-scft/params"
+	"github.com/Zamolxes-ZMX/go-zmx/common"
+	"github.com/Zamolxes-ZMX/go-zmx/common/math"
+	"github.com/Zamolxes-ZMX/go-zmx/consensus/ethash"
+	"github.com/Zamolxes-ZMX/go-zmx/core/types"
+	"github.com/Zamolxes-ZMX/go-zmx/params"
 )
 
 //go:generate gencodec -type DifficultyTest -field-override difficultyTestMarshaling -out gen_difficultytest.go

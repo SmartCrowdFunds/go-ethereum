@@ -26,8 +26,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/SmartCrowdFunds/go-scft/common"
-	"github.com/SmartCrowdFunds/go-scft/log"
+	"github.com/Zamolxes-ZMX/go-zmx/common"
+	"github.com/Zamolxes-ZMX/go-zmx/log"
 )
 
 // faucetDockerfile is the Dockerfile required to build an faucet container to

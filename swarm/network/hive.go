@@ -22,12 +22,12 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/SmartCrowdFunds/go-scft/common"
-	"github.com/SmartCrowdFunds/go-scft/log"
-	"github.com/SmartCrowdFunds/go-scft/p2p/discover"
-	"github.com/SmartCrowdFunds/go-scft/p2p/netutil"
-	"github.com/SmartCrowdFunds/go-scft/swarm/network/kademlia"
-	"github.com/SmartCrowdFunds/go-scft/swarm/storage"
+	"github.com/Zamolxes-ZMX/go-zmx/common"
+	"github.com/Zamolxes-ZMX/go-zmx/log"
+	"github.com/Zamolxes-ZMX/go-zmx/p2p/discover"
+	"github.com/Zamolxes-ZMX/go-zmx/p2p/netutil"
+	"github.com/Zamolxes-ZMX/go-zmx/swarm/network/kademlia"
+	"github.com/Zamolxes-ZMX/go-zmx/swarm/storage"
 )
 
 // Hive is the logistic manager of the swarm

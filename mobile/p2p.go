@@ -16,12 +16,12 @@
 
 // Contains wrappers for the p2p package.
 
-package gscf
+package gzmx
 
 import (
 	"errors"
 
-	"github.com/SmartCrowdFunds/go-scft/p2p"
+	"github.com/Zamolxes-ZMX/go-zmx/p2p"
 )
 
 // NodeInfo represents pi short summary of the information known about the host.

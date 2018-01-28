@@ -25,12 +25,12 @@ import (
 	mrand "math/rand"
 	"time"
 
-	"github.com/SmartCrowdFunds/go-scft/common"
-	"github.com/SmartCrowdFunds/go-scft/consensus"
-	"github.com/SmartCrowdFunds/go-scft/core/types"
-	"github.com/SmartCrowdFunds/go-scft/ethdb"
-	"github.com/SmartCrowdFunds/go-scft/log"
-	"github.com/SmartCrowdFunds/go-scft/params"
+	"github.com/Zamolxes-ZMX/go-zmx/common"
+	"github.com/Zamolxes-ZMX/go-zmx/consensus"
+	"github.com/Zamolxes-ZMX/go-zmx/core/types"
+	"github.com/Zamolxes-ZMX/go-zmx/ethdb"
+	"github.com/Zamolxes-ZMX/go-zmx/log"
+	"github.com/Zamolxes-ZMX/go-zmx/params"
 	"github.com/hashicorp/golang-lru"
 )
 

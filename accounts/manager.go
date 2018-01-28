@@ -21,7 +21,7 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/SmartCrowdFunds/go-scft/event"
+	"github.com/Zamolxes-ZMX/go-zmx/event"
 )
 
 // Manager is an overarching account manager that can communicate with various

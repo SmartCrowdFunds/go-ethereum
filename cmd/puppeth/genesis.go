@@ -21,11 +21,11 @@ import (
 	"errors"
 	"math"
 
-	"github.com/SmartCrowdFunds/go-scft/common"
-	"github.com/SmartCrowdFunds/go-scft/common/hexutil"
-	"github.com/SmartCrowdFunds/go-scft/consensus/ethash"
-	"github.com/SmartCrowdFunds/go-scft/core"
-	"github.com/SmartCrowdFunds/go-scft/params"
+	"github.com/Zamolxes-ZMX/go-zmx/common"
+	"github.com/Zamolxes-ZMX/go-zmx/common/hexutil"
+	"github.com/Zamolxes-ZMX/go-zmx/consensus/ethash"
+	"github.com/Zamolxes-ZMX/go-zmx/core"
+	"github.com/Zamolxes-ZMX/go-zmx/params"
 )
 
 // cppEthereumGenesisSpec represents the genesis specification format used by the

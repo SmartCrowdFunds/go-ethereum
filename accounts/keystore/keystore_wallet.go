@@ -19,9 +19,9 @@ package keystore
 import (
 	"math/big"
 
-	ethereum "github.com/SmartCrowdFunds/go-scft"
-	"github.com/SmartCrowdFunds/go-scft/accounts"
-	"github.com/SmartCrowdFunds/go-scft/core/types"
+	ethereum "github.com/Zamolxes-ZMX/go-zmx"
+	"github.com/Zamolxes-ZMX/go-zmx/accounts"
+	"github.com/Zamolxes-ZMX/go-zmx/core/types"
 )
 
 // keystoreWallet implements the accounts.Wallet interface for the original

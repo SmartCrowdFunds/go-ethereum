@@ -20,7 +20,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/SmartCrowdFunds/go-scft/common/hexutil"
+	"github.com/Zamolxes-ZMX/go-zmx/common/hexutil"
 )
 
 type MyType [5]byte

@@ -16,13 +16,13 @@
 
 // Contains initialization code for the mbile library.
 
-package gscf
+package gzmx
 
 import (
 	"os"
 	"runtime"
 
-	"github.com/SmartCrowdFunds/go-scft/log"
+	"github.com/Zamolxes-ZMX/go-zmx/log"
 )
 
 func init() {

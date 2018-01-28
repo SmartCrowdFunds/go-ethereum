@@ -19,7 +19,7 @@ package params
 import (
 	"math/big"
 
-	"github.com/SmartCrowdFunds/go-scft/common"
+	"github.com/Zamolxes-ZMX/go-zmx/common"
 )
 
 // DAOForkBlockExtra is the block header extra-data field to set for the DAO fork

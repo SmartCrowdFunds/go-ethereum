@@ -35,9 +35,9 @@ import (
 	"io"
 	"sort"
 
-	"github.com/SmartCrowdFunds/go-scft/crypto"
-	"github.com/SmartCrowdFunds/go-scft/crypto/sha3"
-	"github.com/SmartCrowdFunds/go-scft/rlp"
+	"github.com/Zamolxes-ZMX/go-zmx/crypto"
+	"github.com/Zamolxes-ZMX/go-zmx/crypto/sha3"
+	"github.com/Zamolxes-ZMX/go-zmx/rlp"
 )
 
 const SizeLimit = 300 // maximum encoded size of a node record in bytes

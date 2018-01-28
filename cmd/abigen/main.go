@@ -24,8 +24,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/SmartCrowdFunds/go-scft/accounts/abi/bind"
-	"github.com/SmartCrowdFunds/go-scft/common/compiler"
+	"github.com/Zamolxes-ZMX/go-zmx/accounts/abi/bind"
+	"github.com/Zamolxes-ZMX/go-zmx/common/compiler"
 )
 
 var (

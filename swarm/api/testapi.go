@@ -17,7 +17,7 @@
 package api
 
 import (
-	"github.com/SmartCrowdFunds/go-scft/swarm/network"
+	"github.com/Zamolxes-ZMX/go-zmx/swarm/network"
 )
 
 type Control struct {

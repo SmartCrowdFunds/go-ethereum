@@ -22,8 +22,8 @@ import (
 	"strings"
 	"text/tabwriter"
 
-	"github.com/SmartCrowdFunds/go-scft/cmd/utils"
-	swarm "github.com/SmartCrowdFunds/go-scft/swarm/api/client"
+	"github.com/Zamolxes-ZMX/go-zmx/cmd/utils"
+	swarm "github.com/Zamolxes-ZMX/go-zmx/swarm/api/client"
 	"gopkg.in/urfave/cli.v1"
 )
 

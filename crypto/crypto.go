@@ -28,10 +28,10 @@ import (
 	"math/big"
 	"os"
 
-	"github.com/SmartCrowdFunds/go-scft/common"
-	"github.com/SmartCrowdFunds/go-scft/common/math"
-	"github.com/SmartCrowdFunds/go-scft/crypto/sha3"
-	"github.com/SmartCrowdFunds/go-scft/rlp"
+	"github.com/Zamolxes-ZMX/go-zmx/common"
+	"github.com/Zamolxes-ZMX/go-zmx/common/math"
+	"github.com/Zamolxes-ZMX/go-zmx/crypto/sha3"
+	"github.com/Zamolxes-ZMX/go-zmx/rlp"
 )
 
 var (

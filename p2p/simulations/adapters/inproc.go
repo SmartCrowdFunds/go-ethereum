@@ -23,12 +23,12 @@ import (
 	"net"
 	"sync"
 
-	"github.com/SmartCrowdFunds/go-scft/event"
-	"github.com/SmartCrowdFunds/go-scft/log"
-	"github.com/SmartCrowdFunds/go-scft/node"
-	"github.com/SmartCrowdFunds/go-scft/p2p"
-	"github.com/SmartCrowdFunds/go-scft/p2p/discover"
-	"github.com/SmartCrowdFunds/go-scft/rpc"
+	"github.com/Zamolxes-ZMX/go-zmx/event"
+	"github.com/Zamolxes-ZMX/go-zmx/log"
+	"github.com/Zamolxes-ZMX/go-zmx/node"
+	"github.com/Zamolxes-ZMX/go-zmx/p2p"
+	"github.com/Zamolxes-ZMX/go-zmx/p2p/discover"
+	"github.com/Zamolxes-ZMX/go-zmx/rpc"
 )
 
 // SimAdapter is a NodeAdapter which creates in-memory simulation nodes and

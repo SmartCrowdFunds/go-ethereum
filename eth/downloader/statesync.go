@@ -23,15 +23,15 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/SmartCrowdFunds/go-scft/common"
-	"github.com/SmartCrowdFunds/go-scft/core/state"
-	"github.com/SmartCrowdFunds/go-scft/crypto/sha3"
-	"github.com/SmartCrowdFunds/go-scft/ethdb"
-	"github.com/SmartCrowdFunds/go-scft/log"
-	"github.com/SmartCrowdFunds/go-scft/trie"
+	"github.com/Zamolxes-ZMX/go-zmx/common"
+	"github.com/Zamolxes-ZMX/go-zmx/core/state"
+	"github.com/Zamolxes-ZMX/go-zmx/crypto/sha3"
+	"github.com/Zamolxes-ZMX/go-zmx/ethdb"
+	"github.com/Zamolxes-ZMX/go-zmx/log"
+	"github.com/Zamolxes-ZMX/go-zmx/trie"
 )
 
-// stateReq represents a batch of state fetch requests groupped togscfer into
+// stateReq represents a batch of state fetch requests groupped togzmxer into
 // a single data retrieval network packet.
 type stateReq struct {
 	items    []common.Hash              // Hashes of the state items to download

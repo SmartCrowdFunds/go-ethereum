@@ -5,14 +5,14 @@ Maintainer: {{.Author}}
 Build-Depends: debhelper (>= 8.0.0), golang-1.9
 Standards-Version: 3.9.5
 Homepage: https://ethereum.org
-Vcs-Git: git://github.com/SmartCrowdFunds/go-scft.git
-Vcs-Browser: https://github.com/SmartCrowdFunds/go-scft
+Vcs-Git: git://github.com/Zamolxes-ZMX/go-zmx.git
+Vcs-Browser: https://github.com/Zamolxes-ZMX/go-zmx
 
 Package: {{.Name}}
 Architecture: any
 Depends: ${misc:Depends}, {{.ExeList}}
-Description: Meta-package to install gscf and other tools
- Meta-package to install gscf and other tools
+Description: Meta-package to install gzmx and other tools
+ Meta-package to install gzmx and other tools
 
 {{range .Executables}}
 Package: {{$.ExeName .}}

@@ -22,10 +22,10 @@ import (
 	"io"
 	"io/ioutil"
 
-	"github.com/SmartCrowdFunds/go-scft/accounts/keystore"
-	"github.com/SmartCrowdFunds/go-scft/common"
-	"github.com/SmartCrowdFunds/go-scft/core/types"
-	"github.com/SmartCrowdFunds/go-scft/crypto"
+	"github.com/Zamolxes-ZMX/go-zmx/accounts/keystore"
+	"github.com/Zamolxes-ZMX/go-zmx/common"
+	"github.com/Zamolxes-ZMX/go-zmx/core/types"
+	"github.com/Zamolxes-ZMX/go-zmx/crypto"
 )
 
 // NewTransactor is a utility method to easily create a transaction signer from

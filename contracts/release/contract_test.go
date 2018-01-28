@@ -21,11 +21,11 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/SmartCrowdFunds/go-scft/accounts/abi/bind"
-	"github.com/SmartCrowdFunds/go-scft/accounts/abi/bind/backends"
-	"github.com/SmartCrowdFunds/go-scft/common"
-	"github.com/SmartCrowdFunds/go-scft/core"
-	"github.com/SmartCrowdFunds/go-scft/crypto"
+	"github.com/Zamolxes-ZMX/go-zmx/accounts/abi/bind"
+	"github.com/Zamolxes-ZMX/go-zmx/accounts/abi/bind/backends"
+	"github.com/Zamolxes-ZMX/go-zmx/common"
+	"github.com/Zamolxes-ZMX/go-zmx/core"
+	"github.com/Zamolxes-ZMX/go-zmx/crypto"
 )
 
 // setupReleaseTest creates a blockchain simulator and deploys a version oracle

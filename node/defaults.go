@@ -22,8 +22,8 @@ import (
 	"path/filepath"
 	"runtime"
 
-	"github.com/SmartCrowdFunds/go-scft/p2p"
-	"github.com/SmartCrowdFunds/go-scft/p2p/nat"
+	"github.com/Zamolxes-ZMX/go-zmx/p2p"
+	"github.com/Zamolxes-ZMX/go-zmx/p2p/nat"
 )
 
 const (
@@ -59,7 +59,7 @@ func DefaultDataDir() string {
 		} else if runtime.GOOS == "windows" {
 			return filepath.Join(home, "AppData", "Roaming", "Ethereum")
 		} else {
-			return filepath.Join(home, ".gscf")
+			return filepath.Join(home, ".gzmx")
 		}
 	}
 	// As we cannot guess a stable location, return empty and handle later

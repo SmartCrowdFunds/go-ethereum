@@ -20,10 +20,10 @@ import (
 	"errors"
 	"sync"
 
-	"github.com/SmartCrowdFunds/go-scft/common"
-	"github.com/SmartCrowdFunds/go-scft/crypto"
-	"github.com/SmartCrowdFunds/go-scft/rlp"
-	"github.com/SmartCrowdFunds/go-scft/trie"
+	"github.com/Zamolxes-ZMX/go-zmx/common"
+	"github.com/Zamolxes-ZMX/go-zmx/crypto"
+	"github.com/Zamolxes-ZMX/go-zmx/rlp"
+	"github.com/Zamolxes-ZMX/go-zmx/trie"
 )
 
 // NodeSet stores a set of trie nodes. It implements trie.Database and can also

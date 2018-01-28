@@ -17,9 +17,9 @@
 package core
 
 import (
-	"github.com/SmartCrowdFunds/go-scft/core/state"
-	"github.com/SmartCrowdFunds/go-scft/core/types"
-	"github.com/SmartCrowdFunds/go-scft/core/vm"
+	"github.com/Zamolxes-ZMX/go-zmx/core/state"
+	"github.com/Zamolxes-ZMX/go-zmx/core/types"
+	"github.com/Zamolxes-ZMX/go-zmx/core/vm"
 )
 
 // Validator is an interface which defines the standard for block validation. It

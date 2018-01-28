@@ -20,7 +20,7 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/SmartCrowdFunds/go-scft/params"
+	"github.com/Zamolxes-ZMX/go-zmx/params"
 )
 
 type (

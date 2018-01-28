@@ -22,9 +22,9 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/SmartCrowdFunds/go-scft/common"
-	"github.com/SmartCrowdFunds/go-scft/common/math"
-	"github.com/SmartCrowdFunds/go-scft/core/vm"
+	"github.com/Zamolxes-ZMX/go-zmx/common"
+	"github.com/Zamolxes-ZMX/go-zmx/common/math"
+	"github.com/Zamolxes-ZMX/go-zmx/core/vm"
 )
 
 type JSONLogger struct {

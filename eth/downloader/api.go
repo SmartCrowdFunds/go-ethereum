@@ -20,9 +20,9 @@ import (
 	"context"
 	"sync"
 
-	ethereum "github.com/SmartCrowdFunds/go-scft"
-	"github.com/SmartCrowdFunds/go-scft/event"
-	"github.com/SmartCrowdFunds/go-scft/rpc"
+	ethereum "github.com/Zamolxes-ZMX/go-zmx"
+	"github.com/Zamolxes-ZMX/go-zmx/event"
+	"github.com/Zamolxes-ZMX/go-zmx/rpc"
 )
 
 // PublicDownloaderAPI provides an API which gives information about the current synchronisation status.

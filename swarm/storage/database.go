@@ -22,7 +22,7 @@ package storage
 import (
 	"fmt"
 
-	"github.com/SmartCrowdFunds/go-scft/compression/rle"
+	"github.com/Zamolxes-ZMX/go-zmx/compression/rle"
 	"github.com/syndtr/goleveldb/leveldb"
 	"github.com/syndtr/goleveldb/leveldb/iterator"
 	"github.com/syndtr/goleveldb/leveldb/opt"

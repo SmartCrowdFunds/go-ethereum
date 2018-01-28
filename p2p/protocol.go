@@ -19,7 +19,7 @@ package p2p
 import (
 	"fmt"
 
-	"github.com/SmartCrowdFunds/go-scft/p2p/discover"
+	"github.com/Zamolxes-ZMX/go-zmx/p2p/discover"
 )
 
 // Protocol represents a P2P subprotocol implementation.

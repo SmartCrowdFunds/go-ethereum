@@ -27,16 +27,16 @@ import (
 
 	goruntime "runtime"
 
-	"github.com/SmartCrowdFunds/go-scft/cmd/evm/internal/compiler"
-	"github.com/SmartCrowdFunds/go-scft/cmd/utils"
-	"github.com/SmartCrowdFunds/go-scft/common"
-	"github.com/SmartCrowdFunds/go-scft/core"
-	"github.com/SmartCrowdFunds/go-scft/core/state"
-	"github.com/SmartCrowdFunds/go-scft/core/vm"
-	"github.com/SmartCrowdFunds/go-scft/core/vm/runtime"
-	"github.com/SmartCrowdFunds/go-scft/ethdb"
-	"github.com/SmartCrowdFunds/go-scft/log"
-	"github.com/SmartCrowdFunds/go-scft/params"
+	"github.com/Zamolxes-ZMX/go-zmx/cmd/evm/internal/compiler"
+	"github.com/Zamolxes-ZMX/go-zmx/cmd/utils"
+	"github.com/Zamolxes-ZMX/go-zmx/common"
+	"github.com/Zamolxes-ZMX/go-zmx/core"
+	"github.com/Zamolxes-ZMX/go-zmx/core/state"
+	"github.com/Zamolxes-ZMX/go-zmx/core/vm"
+	"github.com/Zamolxes-ZMX/go-zmx/core/vm/runtime"
+	"github.com/Zamolxes-ZMX/go-zmx/ethdb"
+	"github.com/Zamolxes-ZMX/go-zmx/log"
+	"github.com/Zamolxes-ZMX/go-zmx/params"
 	cli "gopkg.in/urfave/cli.v1"
 )
 

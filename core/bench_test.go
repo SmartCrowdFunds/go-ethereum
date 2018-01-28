@@ -23,14 +23,14 @@ import (
 	"os"
 	"testing"
 
-	"github.com/SmartCrowdFunds/go-scft/common"
-	"github.com/SmartCrowdFunds/go-scft/common/math"
-	"github.com/SmartCrowdFunds/go-scft/consensus/ethash"
-	"github.com/SmartCrowdFunds/go-scft/core/types"
-	"github.com/SmartCrowdFunds/go-scft/core/vm"
-	"github.com/SmartCrowdFunds/go-scft/crypto"
-	"github.com/SmartCrowdFunds/go-scft/ethdb"
-	"github.com/SmartCrowdFunds/go-scft/params"
+	"github.com/Zamolxes-ZMX/go-zmx/common"
+	"github.com/Zamolxes-ZMX/go-zmx/common/math"
+	"github.com/Zamolxes-ZMX/go-zmx/consensus/ethash"
+	"github.com/Zamolxes-ZMX/go-zmx/core/types"
+	"github.com/Zamolxes-ZMX/go-zmx/core/vm"
+	"github.com/Zamolxes-ZMX/go-zmx/crypto"
+	"github.com/Zamolxes-ZMX/go-zmx/ethdb"
+	"github.com/Zamolxes-ZMX/go-zmx/params"
 )
 
 func BenchmarkInsertChain_empty_memdb(b *testing.B) {

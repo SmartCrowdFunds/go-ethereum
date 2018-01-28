@@ -32,9 +32,9 @@ import (
 	"unsafe"
 
 	mmap "github.com/edsrzf/mmap-go"
-	"github.com/SmartCrowdFunds/go-scft/consensus"
-	"github.com/SmartCrowdFunds/go-scft/log"
-	"github.com/SmartCrowdFunds/go-scft/rpc"
+	"github.com/Zamolxes-ZMX/go-zmx/consensus"
+	"github.com/Zamolxes-ZMX/go-zmx/log"
+	"github.com/Zamolxes-ZMX/go-zmx/rpc"
 	metrics "github.com/rcrowley/go-metrics"
 )
 

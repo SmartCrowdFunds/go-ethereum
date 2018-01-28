@@ -33,10 +33,10 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/SmartCrowdFunds/go-scft/log"
-	"github.com/SmartCrowdFunds/go-scft/p2p"
-	"github.com/SmartCrowdFunds/go-scft/params"
-	"github.com/SmartCrowdFunds/go-scft/rpc"
+	"github.com/Zamolxes-ZMX/go-zmx/log"
+	"github.com/Zamolxes-ZMX/go-zmx/p2p"
+	"github.com/Zamolxes-ZMX/go-zmx/params"
+	"github.com/Zamolxes-ZMX/go-zmx/rpc"
 	"github.com/rcrowley/go-metrics"
 	"golang.org/x/net/websocket"
 )

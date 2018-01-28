@@ -27,13 +27,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/SmartCrowdFunds/go-scft/common/mclock"
-	"github.com/SmartCrowdFunds/go-scft/ethdb"
-	"github.com/SmartCrowdFunds/go-scft/log"
-	"github.com/SmartCrowdFunds/go-scft/p2p"
-	"github.com/SmartCrowdFunds/go-scft/p2p/discover"
-	"github.com/SmartCrowdFunds/go-scft/p2p/discv5"
-	"github.com/SmartCrowdFunds/go-scft/rlp"
+	"github.com/Zamolxes-ZMX/go-zmx/common/mclock"
+	"github.com/Zamolxes-ZMX/go-zmx/ethdb"
+	"github.com/Zamolxes-ZMX/go-zmx/log"
+	"github.com/Zamolxes-ZMX/go-zmx/p2p"
+	"github.com/Zamolxes-ZMX/go-zmx/p2p/discover"
+	"github.com/Zamolxes-ZMX/go-zmx/p2p/discv5"
+	"github.com/Zamolxes-ZMX/go-zmx/rlp"
 )
 
 const (

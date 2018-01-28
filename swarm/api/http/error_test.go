@@ -24,7 +24,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/SmartCrowdFunds/go-scft/swarm/testutil"
+	"github.com/Zamolxes-ZMX/go-zmx/swarm/testutil"
 )
 
 func TestError(t *testing.T) {

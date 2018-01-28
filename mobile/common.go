@@ -16,7 +16,7 @@
 
 // Contains all the wrappers from the common package.
 
-package gscf
+package gzmx
 
 import (
 	"encoding/hex"
@@ -24,7 +24,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/SmartCrowdFunds/go-scft/common"
+	"github.com/Zamolxes-ZMX/go-zmx/common"
 )
 
 // Hash represents the 32 byte Keccak256 hash of arbitrary data.

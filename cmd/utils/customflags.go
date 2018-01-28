@@ -27,7 +27,7 @@ import (
 	"path"
 	"strings"
 
-	"github.com/SmartCrowdFunds/go-scft/common/math"
+	"github.com/Zamolxes-ZMX/go-zmx/common/math"
 	"gopkg.in/urfave/cli.v1"
 )
 

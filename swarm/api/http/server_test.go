@@ -26,11 +26,11 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/SmartCrowdFunds/go-scft/common"
-	"github.com/SmartCrowdFunds/go-scft/swarm/api"
-	swarm "github.com/SmartCrowdFunds/go-scft/swarm/api/client"
-	"github.com/SmartCrowdFunds/go-scft/swarm/storage"
-	"github.com/SmartCrowdFunds/go-scft/swarm/testutil"
+	"github.com/Zamolxes-ZMX/go-zmx/common"
+	"github.com/Zamolxes-ZMX/go-zmx/swarm/api"
+	swarm "github.com/Zamolxes-ZMX/go-zmx/swarm/api/client"
+	"github.com/Zamolxes-ZMX/go-zmx/swarm/storage"
+	"github.com/Zamolxes-ZMX/go-zmx/swarm/testutil"
 )
 
 func TestBzzGetPath(t *testing.T) {

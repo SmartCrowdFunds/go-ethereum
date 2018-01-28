@@ -27,12 +27,12 @@ import (
 	"io"
 	"math/big"
 
-	"github.com/SmartCrowdFunds/go-scft/accounts"
-	"github.com/SmartCrowdFunds/go-scft/accounts/usbwallet/internal/trezor"
-	"github.com/SmartCrowdFunds/go-scft/common"
-	"github.com/SmartCrowdFunds/go-scft/common/hexutil"
-	"github.com/SmartCrowdFunds/go-scft/core/types"
-	"github.com/SmartCrowdFunds/go-scft/log"
+	"github.com/Zamolxes-ZMX/go-zmx/accounts"
+	"github.com/Zamolxes-ZMX/go-zmx/accounts/usbwallet/internal/trezor"
+	"github.com/Zamolxes-ZMX/go-zmx/common"
+	"github.com/Zamolxes-ZMX/go-zmx/common/hexutil"
+	"github.com/Zamolxes-ZMX/go-zmx/core/types"
+	"github.com/Zamolxes-ZMX/go-zmx/log"
 	"github.com/golang/protobuf/proto"
 )
 

@@ -25,29 +25,29 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/SmartCrowdFunds/go-scft/accounts"
-	"github.com/SmartCrowdFunds/go-scft/common"
-	"github.com/SmartCrowdFunds/go-scft/common/hexutil"
-	"github.com/SmartCrowdFunds/go-scft/consensus"
-	"github.com/SmartCrowdFunds/go-scft/consensus/clique"
-	"github.com/SmartCrowdFunds/go-scft/consensus/ethash"
-	"github.com/SmartCrowdFunds/go-scft/core"
-	"github.com/SmartCrowdFunds/go-scft/core/bloombits"
-	"github.com/SmartCrowdFunds/go-scft/core/types"
-	"github.com/SmartCrowdFunds/go-scft/core/vm"
-	"github.com/SmartCrowdFunds/go-scft/eth/downloader"
-	"github.com/SmartCrowdFunds/go-scft/eth/filters"
-	"github.com/SmartCrowdFunds/go-scft/eth/gasprice"
-	"github.com/SmartCrowdFunds/go-scft/ethdb"
-	"github.com/SmartCrowdFunds/go-scft/event"
-	"github.com/SmartCrowdFunds/go-scft/internal/ethapi"
-	"github.com/SmartCrowdFunds/go-scft/log"
-	"github.com/SmartCrowdFunds/go-scft/miner"
-	"github.com/SmartCrowdFunds/go-scft/node"
-	"github.com/SmartCrowdFunds/go-scft/p2p"
-	"github.com/SmartCrowdFunds/go-scft/params"
-	"github.com/SmartCrowdFunds/go-scft/rlp"
-	"github.com/SmartCrowdFunds/go-scft/rpc"
+	"github.com/Zamolxes-ZMX/go-zmx/accounts"
+	"github.com/Zamolxes-ZMX/go-zmx/common"
+	"github.com/Zamolxes-ZMX/go-zmx/common/hexutil"
+	"github.com/Zamolxes-ZMX/go-zmx/consensus"
+	"github.com/Zamolxes-ZMX/go-zmx/consensus/clique"
+	"github.com/Zamolxes-ZMX/go-zmx/consensus/ethash"
+	"github.com/Zamolxes-ZMX/go-zmx/core"
+	"github.com/Zamolxes-ZMX/go-zmx/core/bloombits"
+	"github.com/Zamolxes-ZMX/go-zmx/core/types"
+	"github.com/Zamolxes-ZMX/go-zmx/core/vm"
+	"github.com/Zamolxes-ZMX/go-zmx/eth/downloader"
+	"github.com/Zamolxes-ZMX/go-zmx/eth/filters"
+	"github.com/Zamolxes-ZMX/go-zmx/eth/gasprice"
+	"github.com/Zamolxes-ZMX/go-zmx/ethdb"
+	"github.com/Zamolxes-ZMX/go-zmx/event"
+	"github.com/Zamolxes-ZMX/go-zmx/internal/ethapi"
+	"github.com/Zamolxes-ZMX/go-zmx/log"
+	"github.com/Zamolxes-ZMX/go-zmx/miner"
+	"github.com/Zamolxes-ZMX/go-zmx/node"
+	"github.com/Zamolxes-ZMX/go-zmx/p2p"
+	"github.com/Zamolxes-ZMX/go-zmx/params"
+	"github.com/Zamolxes-ZMX/go-zmx/rlp"
+	"github.com/Zamolxes-ZMX/go-zmx/rpc"
 )
 
 type LesServer interface {
@@ -140,7 +140,7 @@ func New(ctx *node.ServiceContext, config *Config) (*Ethereum, error) {
 	if !config.SkipBcVersionCheck {
 		bcVersion := core.GetBlockChainVersion(chainDb)
 		if bcVersion != core.BlockChainVersion && bcVersion != 0 {
-			return nil, fmt.Errorf("Blockchain DB version mismatch (%d / %d). Run gscf upgradedb.\n", bcVersion, core.BlockChainVersion)
+			return nil, fmt.Errorf("Blockchain DB version mismatch (%d / %d). Run gzmx upgradedb.\n", bcVersion, core.BlockChainVersion)
 		}
 		core.WriteBlockChainVersion(chainDb, core.BlockChainVersion)
 	}
@@ -184,7 +184,7 @@ func makeExtraData(extra []byte) []byte {
 		// create default extradata
 		extra, _ = rlp.EncodeToBytes([]interface{}{
 			uint(params.VersionMajor<<16 | params.VersionMinor<<8 | params.VersionPatch),
-			"gscf",
+			"gzmx",
 			runtime.Version(),
 			runtime.GOOS,
 		})

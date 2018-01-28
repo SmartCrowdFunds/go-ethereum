@@ -21,7 +21,7 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/SmartCrowdFunds/go-scft/eth/tracers/internal/tracers"
+	"github.com/Zamolxes-ZMX/go-zmx/eth/tracers/internal/tracers"
 )
 
 // all contains all the built in JavaScript tracers by name.

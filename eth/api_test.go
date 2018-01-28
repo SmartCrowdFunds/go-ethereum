@@ -21,9 +21,9 @@ import (
 	"testing"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/SmartCrowdFunds/go-scft/common"
-	"github.com/SmartCrowdFunds/go-scft/core/state"
-	"github.com/SmartCrowdFunds/go-scft/ethdb"
+	"github.com/Zamolxes-ZMX/go-zmx/common"
+	"github.com/Zamolxes-ZMX/go-zmx/core/state"
+	"github.com/Zamolxes-ZMX/go-zmx/ethdb"
 )
 
 var dumper = spew.ConfigState{Indent: "    "}

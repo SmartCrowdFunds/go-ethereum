@@ -22,8 +22,8 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/SmartCrowdFunds/go-scft/common"
-	"github.com/SmartCrowdFunds/go-scft/core/types"
+	"github.com/Zamolxes-ZMX/go-zmx/common"
+	"github.com/Zamolxes-ZMX/go-zmx/core/types"
 )
 
 // NotFound is returned by API methods if the requested item does not exist.

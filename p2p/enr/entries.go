@@ -22,8 +22,8 @@ import (
 	"io"
 	"net"
 
-	"github.com/SmartCrowdFunds/go-scft/crypto"
-	"github.com/SmartCrowdFunds/go-scft/rlp"
+	"github.com/Zamolxes-ZMX/go-zmx/crypto"
+	"github.com/Zamolxes-ZMX/go-zmx/rlp"
 )
 
 // Entry is implemented by known node record entry types.

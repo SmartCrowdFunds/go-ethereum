@@ -16,13 +16,13 @@
 
 // Contains a wrapper for the Ethereum client.
 
-package gscf
+package gzmx
 
 import (
 	"math/big"
 
-	"github.com/SmartCrowdFunds/go-scft/core/types"
-	"github.com/SmartCrowdFunds/go-scft/ethclient"
+	"github.com/Zamolxes-ZMX/go-zmx/core/types"
+	"github.com/Zamolxes-ZMX/go-zmx/ethclient"
 )
 
 // EthereumClient provides access to the Ethereum APIs.

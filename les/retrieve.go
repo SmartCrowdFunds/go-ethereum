@@ -26,7 +26,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/SmartCrowdFunds/go-scft/common/mclock"
+	"github.com/Zamolxes-ZMX/go-zmx/common/mclock"
 )
 
 var (

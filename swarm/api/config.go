@@ -22,14 +22,14 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/SmartCrowdFunds/go-scft/common"
-	"github.com/SmartCrowdFunds/go-scft/contracts/ens"
-	"github.com/SmartCrowdFunds/go-scft/crypto"
-	"github.com/SmartCrowdFunds/go-scft/log"
-	"github.com/SmartCrowdFunds/go-scft/node"
-	"github.com/SmartCrowdFunds/go-scft/swarm/network"
-	"github.com/SmartCrowdFunds/go-scft/swarm/services/swap"
-	"github.com/SmartCrowdFunds/go-scft/swarm/storage"
+	"github.com/Zamolxes-ZMX/go-zmx/common"
+	"github.com/Zamolxes-ZMX/go-zmx/contracts/ens"
+	"github.com/Zamolxes-ZMX/go-zmx/crypto"
+	"github.com/Zamolxes-ZMX/go-zmx/log"
+	"github.com/Zamolxes-ZMX/go-zmx/node"
+	"github.com/Zamolxes-ZMX/go-zmx/swarm/network"
+	"github.com/Zamolxes-ZMX/go-zmx/swarm/services/swap"
+	"github.com/Zamolxes-ZMX/go-zmx/swarm/storage"
 )
 
 const (
@@ -75,7 +75,7 @@ func NewDefaultConfig() (self *Config) {
 		ListenAddr:    DefaultHTTPListenAddr,
 		Port:          DefaultHTTPPort,
 		Path:          node.DefaultDataDir(),
-		EnsApi:        node.DefaultIPCEndpoint("gscf"),
+		EnsApi:        node.DefaultIPCEndpoint("gzmx"),
 		EnsRoot:       ens.TestNetAddress,
 		NetworkId:     network.NetworkId,
 		SwapEnabled:   false,

@@ -19,7 +19,7 @@ package bloombits
 import (
 	"errors"
 
-	"github.com/SmartCrowdFunds/go-scft/core/types"
+	"github.com/Zamolxes-ZMX/go-zmx/core/types"
 )
 
 // errSectionOutOfBounds is returned if the user tried to add more bloom filters
@@ -30,7 +30,7 @@ var errSectionOutOfBounds = errors.New("section out of bounds")
 // to be used for batched filtering.
 type Generator struct {
 	blooms   [types.BloomBitLength][]byte // Rotated blooms for per-bit matching
-	sections uint                         // Number of sections to batch togscfer
+	sections uint                         // Number of sections to batch togzmxer
 	nextBit  uint                         // Next bit to set when adding a bloom
 }
 

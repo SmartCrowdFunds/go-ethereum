@@ -6,6 +6,6 @@ sudo yum update -y
 wget --continue https://storage.googleapis.com/golang/go1.8.1.linux-amd64.tar.gz
 sudo tar -C /usr/local -xzf go1.8.1.linux-amd64.tar.gz
 
-GSCF_PATH="~vagrant/go/src/github.com/SmartCrowdFunds/go-scft/build/bin/"
+gzmx_PATH="~vagrant/go/src/github.com/Zamolxes-ZMX/go-zmx/build/bin/"
 
-echo "export PATH=$PATH:/usr/local/go/bin:$GSCF_PATH" >> ~vagrant/.bashrc 
+echo "export PATH=$PATH:/usr/local/go/bin:$gzmx_PATH" >> ~vagrant/.bashrc 

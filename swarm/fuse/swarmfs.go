@@ -17,7 +17,7 @@
 package fuse
 
 import (
-	"github.com/SmartCrowdFunds/go-scft/swarm/api"
+	"github.com/Zamolxes-ZMX/go-zmx/swarm/api"
 	"sync"
 	"time"
 )

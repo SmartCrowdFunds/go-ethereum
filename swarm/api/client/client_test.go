@@ -25,8 +25,8 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/SmartCrowdFunds/go-scft/swarm/api"
-	"github.com/SmartCrowdFunds/go-scft/swarm/testutil"
+	"github.com/Zamolxes-ZMX/go-zmx/swarm/api"
+	"github.com/Zamolxes-ZMX/go-zmx/swarm/testutil"
 )
 
 // TestClientUploadDownloadRaw test uploading and downloading raw data to swarm

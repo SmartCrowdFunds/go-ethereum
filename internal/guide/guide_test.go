@@ -30,8 +30,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/SmartCrowdFunds/go-scft/accounts/keystore"
-	"github.com/SmartCrowdFunds/go-scft/core/types"
+	"github.com/Zamolxes-ZMX/go-zmx/accounts/keystore"
+	"github.com/Zamolxes-ZMX/go-zmx/core/types"
 )
 
 // Tests that the account management snippets work correctly.

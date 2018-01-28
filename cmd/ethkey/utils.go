@@ -22,9 +22,9 @@ import (
 	"io/ioutil"
 	"strings"
 
-	"github.com/SmartCrowdFunds/go-scft/cmd/utils"
-	"github.com/SmartCrowdFunds/go-scft/console"
-	"github.com/SmartCrowdFunds/go-scft/crypto"
+	"github.com/Zamolxes-ZMX/go-zmx/cmd/utils"
+	"github.com/Zamolxes-ZMX/go-zmx/console"
+	"github.com/Zamolxes-ZMX/go-zmx/crypto"
 	"gopkg.in/urfave/cli.v1"
 )
 

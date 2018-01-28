@@ -23,8 +23,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/SmartCrowdFunds/go-scft/core"
-	"github.com/SmartCrowdFunds/go-scft/log"
+	"github.com/Zamolxes-ZMX/go-zmx/core"
+	"github.com/Zamolxes-ZMX/go-zmx/log"
 	"github.com/olekukonko/tablewriter"
 )
 

@@ -7,10 +7,10 @@ import (
 	"math/big"
 	"strings"
 
-	"github.com/SmartCrowdFunds/go-scft/accounts/abi"
-	"github.com/SmartCrowdFunds/go-scft/accounts/abi/bind"
-	"github.com/SmartCrowdFunds/go-scft/common"
-	"github.com/SmartCrowdFunds/go-scft/core/types"
+	"github.com/Zamolxes-ZMX/go-zmx/accounts/abi"
+	"github.com/Zamolxes-ZMX/go-zmx/accounts/abi/bind"
+	"github.com/Zamolxes-ZMX/go-zmx/common"
+	"github.com/Zamolxes-ZMX/go-zmx/core/types"
 )
 
 // PublicResolverABI is the input ABI used to generate the binding from.

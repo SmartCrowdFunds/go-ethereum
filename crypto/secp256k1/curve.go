@@ -36,7 +36,7 @@ import (
 	"math/big"
 	"unsafe"
 
-	"github.com/SmartCrowdFunds/go-scft/common/math"
+	"github.com/Zamolxes-ZMX/go-zmx/common/math"
 )
 
 /*

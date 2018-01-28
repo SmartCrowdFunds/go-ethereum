@@ -40,7 +40,7 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/SmartCrowdFunds/go-scft/crypto"
+	"github.com/Zamolxes-ZMX/go-zmx/crypto"
 )
 
 var dumpEnc bool

@@ -24,9 +24,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/SmartCrowdFunds/go-scft/cmd/utils"
-	"github.com/SmartCrowdFunds/go-scft/swarm/api"
-	swarm "github.com/SmartCrowdFunds/go-scft/swarm/api/client"
+	"github.com/Zamolxes-ZMX/go-zmx/cmd/utils"
+	"github.com/Zamolxes-ZMX/go-zmx/swarm/api"
+	swarm "github.com/Zamolxes-ZMX/go-zmx/swarm/api/client"
 	"gopkg.in/urfave/cli.v1"
 )
 

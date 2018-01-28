@@ -21,7 +21,7 @@ import (
 	"bytes"
 	"errors"
 
-	"github.com/SmartCrowdFunds/go-scft/crypto"
+	"github.com/Zamolxes-ZMX/go-zmx/crypto"
 )
 
 const (

@@ -19,7 +19,7 @@ package vm
 import (
 	"math/big"
 
-	"github.com/SmartCrowdFunds/go-scft/common/math"
+	"github.com/Zamolxes-ZMX/go-zmx/common/math"
 )
 
 func memorySha3(stack *Stack) *big.Int {

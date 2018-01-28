@@ -16,13 +16,13 @@
 
 // Contains all the wrappers from the go-scft root package.
 
-package gscf
+package gzmx
 
 import (
 	"errors"
 
-	ethereum "github.com/SmartCrowdFunds/go-scft"
-	"github.com/SmartCrowdFunds/go-scft/common"
+	ethereum "github.com/Zamolxes-ZMX/go-zmx"
+	"github.com/Zamolxes-ZMX/go-zmx/common"
 )
 
 // Subscription represents an event subscription where events are

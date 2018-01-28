@@ -27,13 +27,13 @@ import (
 
 	cli "gopkg.in/urfave/cli.v1"
 
-	"github.com/SmartCrowdFunds/go-scft/cmd/utils"
-	"github.com/SmartCrowdFunds/go-scft/common"
-	"github.com/SmartCrowdFunds/go-scft/log"
-	"github.com/SmartCrowdFunds/go-scft/node"
+	"github.com/Zamolxes-ZMX/go-zmx/cmd/utils"
+	"github.com/Zamolxes-ZMX/go-zmx/common"
+	"github.com/Zamolxes-ZMX/go-zmx/log"
+	"github.com/Zamolxes-ZMX/go-zmx/node"
 	"github.com/naoina/toml"
 
-	bzzapi "github.com/SmartCrowdFunds/go-scft/swarm/api"
+	bzzapi "github.com/Zamolxes-ZMX/go-zmx/swarm/api"
 )
 
 var (
@@ -69,7 +69,7 @@ const (
 	SWARM_ENV_ENS_ADDR        = "SWARM_ENS_ADDR"
 	SWARM_ENV_CORS            = "SWARM_CORS"
 	SWARM_ENV_BOOTNODES       = "SWARM_BOOTNODES"
-	GSCF_ENV_DATADIR          = "GSCF_DATADIR"
+	gzmx_ENV_DATADIR          = "gzmx_DATADIR"
 )
 
 // These settings ensure that TOML keys use the same names as Go struct fields.
@@ -83,7 +83,7 @@ var tomlSettings = toml.Config{
 	MissingField: func(rt reflect.Type, field string) error {
 		link := ""
 		if unicode.IsUpper(rune(rt.Name()[0])) && rt.PkgPath() != "main" {
-			link = fmt.Sprintf(", check github.com/SmartCrowdFunds/go-scft/swarm/api/config.go for available fields")
+			link = fmt.Sprintf(", check github.com/Zamolxes-ZMX/go-zmx/swarm/api/config.go for available fields")
 		}
 		return fmt.Errorf("field '%s' is not defined in %s%s", field, rt.String(), link)
 	},
@@ -110,7 +110,7 @@ func initSwarmNode(config *bzzapi.Config, stack *node.Node, ctx *cli.Context) {
 	//at this point, all vars should be set in the Config
 	//get the account for the provided swarm account
 	prvkey := getAccount(config.BzzAccount, ctx, stack)
-	//set the resolved config path (gscf --datadir)
+	//set the resolved config path (gzmx --datadir)
 	config.Path = stack.InstanceDir()
 	//finally, initialize the configuration
 	config.Init(prvkey)
@@ -233,7 +233,7 @@ func envVarsOverride(currentConfig *bzzapi.Config) (config *bzzapi.Config) {
 		}
 	}
 
-	if datadir := os.Getenv(GSCF_ENV_DATADIR); datadir != "" {
+	if datadir := os.Getenv(gzmx_ENV_DATADIR); datadir != "" {
 		currentConfig.Path = datadir
 	}
 

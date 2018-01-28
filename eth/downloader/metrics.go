@@ -19,7 +19,7 @@
 package downloader
 
 import (
-	"github.com/SmartCrowdFunds/go-scft/metrics"
+	"github.com/Zamolxes-ZMX/go-zmx/metrics"
 )
 
 var (

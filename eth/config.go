@@ -23,13 +23,13 @@ import (
 	"path/filepath"
 	"runtime"
 
-	"github.com/SmartCrowdFunds/go-scft/common"
-	"github.com/SmartCrowdFunds/go-scft/common/hexutil"
-	"github.com/SmartCrowdFunds/go-scft/consensus/ethash"
-	"github.com/SmartCrowdFunds/go-scft/core"
-	"github.com/SmartCrowdFunds/go-scft/eth/downloader"
-	"github.com/SmartCrowdFunds/go-scft/eth/gasprice"
-	"github.com/SmartCrowdFunds/go-scft/params"
+	"github.com/Zamolxes-ZMX/go-zmx/common"
+	"github.com/Zamolxes-ZMX/go-zmx/common/hexutil"
+	"github.com/Zamolxes-ZMX/go-zmx/consensus/ethash"
+	"github.com/Zamolxes-ZMX/go-zmx/core"
+	"github.com/Zamolxes-ZMX/go-zmx/eth/downloader"
+	"github.com/Zamolxes-ZMX/go-zmx/eth/gasprice"
+	"github.com/Zamolxes-ZMX/go-zmx/params"
 )
 
 // DefaultConfig contains default settings for use on the Ethereum main net.

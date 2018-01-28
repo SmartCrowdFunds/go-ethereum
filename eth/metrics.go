@@ -17,8 +17,8 @@
 package eth
 
 import (
-	"github.com/SmartCrowdFunds/go-scft/metrics"
-	"github.com/SmartCrowdFunds/go-scft/p2p"
+	"github.com/Zamolxes-ZMX/go-zmx/metrics"
+	"github.com/Zamolxes-ZMX/go-zmx/p2p"
 )
 
 var (

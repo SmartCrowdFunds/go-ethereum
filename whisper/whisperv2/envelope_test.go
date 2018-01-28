@@ -21,8 +21,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/SmartCrowdFunds/go-scft/crypto"
-	"github.com/SmartCrowdFunds/go-scft/crypto/ecies"
+	"github.com/Zamolxes-ZMX/go-zmx/crypto"
+	"github.com/Zamolxes-ZMX/go-zmx/crypto/ecies"
 )
 
 func TestEnvelopeOpen(t *testing.T) {

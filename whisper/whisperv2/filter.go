@@ -21,7 +21,7 @@ package whisperv2
 import (
 	"crypto/ecdsa"
 
-	"github.com/SmartCrowdFunds/go-scft/event/filter"
+	"github.com/Zamolxes-ZMX/go-zmx/event/filter"
 )
 
 // Filter is used to subscribe to specific types of whisper messages.

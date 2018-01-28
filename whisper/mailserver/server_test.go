@@ -24,9 +24,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/SmartCrowdFunds/go-scft/common"
-	"github.com/SmartCrowdFunds/go-scft/crypto"
-	whisper "github.com/SmartCrowdFunds/go-scft/whisper/whisperv5"
+	"github.com/Zamolxes-ZMX/go-zmx/common"
+	"github.com/Zamolxes-ZMX/go-zmx/crypto"
+	whisper "github.com/Zamolxes-ZMX/go-zmx/whisper/whisperv5"
 )
 
 const powRequirement = 0.00001

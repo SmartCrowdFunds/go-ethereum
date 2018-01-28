@@ -22,7 +22,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/SmartCrowdFunds/go-scft/crypto"
+	"github.com/Zamolxes-ZMX/go-zmx/crypto"
 )
 
 // Tests whether a message can be wrapped without any identity or encryption.

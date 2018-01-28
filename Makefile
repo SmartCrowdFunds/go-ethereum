@@ -2,19 +2,19 @@
 # with Go source code. If you know what GOPATH is then you probably
 # don't need to bother with make.
 
-.PHONY: gscf android ios gscf-cross swarm evm all test clean
-.PHONY: gscf-linux gscf-linux-386 gscf-linux-amd64 gscf-linux-mips64 gscf-linux-mips64le
-.PHONY: gscf-linux-arm gscf-linux-arm-5 gscf-linux-arm-6 gscf-linux-arm-7 gscf-linux-arm64
-.PHONY: gscf-darwin gscf-darwin-386 gscf-darwin-amd64
-.PHONY: gscf-windows gscf-windows-386 gscf-windows-amd64
+.PHONY: gzmx android ios gzmx-cross swarm evm all test clean
+.PHONY: gzmx-linux gzmx-linux-386 gzmx-linux-amd64 gzmx-linux-mips64 gzmx-linux-mips64le
+.PHONY: gzmx-linux-arm gzmx-linux-arm-5 gzmx-linux-arm-6 gzmx-linux-arm-7 gzmx-linux-arm64
+.PHONY: gzmx-darwin gzmx-darwin-386 gzmx-darwin-amd64
+.PHONY: gzmx-windows gzmx-windows-386 gzmx-windows-amd64
 
 GOBIN = $(shell pwd)/build/bin
 GO ?= latest
 
-gscf:
-	build/env.sh go run build/ci.go install ./cmd/gscf
+gzmx:
+	build/env.sh go run build/ci.go install ./cmd/gzmx
 	@echo "Done building."
-	@echo "Run \"$(GOBIN)/gscf\" to launch gscf."
+	@echo "Run \"$(GOBIN)/gzmx\" to launch gzmx."
 
 swarm:
 	build/env.sh go run build/ci.go install ./cmd/swarm
@@ -27,12 +27,12 @@ all:
 android:
 	build/env.sh go run build/ci.go aar --local
 	@echo "Done building."
-	@echo "Import \"$(GOBIN)/gscf.aar\" to use the library."
+	@echo "Import \"$(GOBIN)/gzmx.aar\" to use the library."
 
 ios:
 	build/env.sh go run build/ci.go xcode --local
 	@echo "Done building."
-	@echo "Import \"$(GOBIN)/Gscf.framework\" to use the library."
+	@echo "Import \"$(GOBIN)/gzmx.framework\" to use the library."
 
 test: all
 	build/env.sh go run build/ci.go test
@@ -55,92 +55,92 @@ devtools:
 
 # Cross Compilation Targets (xgo)
 
-gscf-cross: gscf-linux gscf-darwin gscf-windows gscf-android gscf-ios
+gzmx-cross: gzmx-linux gzmx-darwin gzmx-windows gzmx-android gzmx-ios
 	@echo "Full cross compilation done:"
-	@ls -ld $(GOBIN)/gscf-*
+	@ls -ld $(GOBIN)/gzmx-*
 
-gscf-linux: gscf-linux-386 gscf-linux-amd64 gscf-linux-arm gscf-linux-mips64 gscf-linux-mips64le
+gzmx-linux: gzmx-linux-386 gzmx-linux-amd64 gzmx-linux-arm gzmx-linux-mips64 gzmx-linux-mips64le
 	@echo "Linux cross compilation done:"
-	@ls -ld $(GOBIN)/gscf-linux-*
+	@ls -ld $(GOBIN)/gzmx-linux-*
 
-gscf-linux-386:
-	build/env.sh go run build/ci.go xgo -- --go=$(GO) --targets=linux/386 -v ./cmd/gscf
+gzmx-linux-386:
+	build/env.sh go run build/ci.go xgo -- --go=$(GO) --targets=linux/386 -v ./cmd/gzmx
 	@echo "Linux 386 cross compilation done:"
-	@ls -ld $(GOBIN)/gscf-linux-* | grep 386
+	@ls -ld $(GOBIN)/gzmx-linux-* | grep 386
 
-gscf-linux-amd64:
-	build/env.sh go run build/ci.go xgo -- --go=$(GO) --targets=linux/amd64 -v ./cmd/gscf
+gzmx-linux-amd64:
+	build/env.sh go run build/ci.go xgo -- --go=$(GO) --targets=linux/amd64 -v ./cmd/gzmx
 	@echo "Linux amd64 cross compilation done:"
-	@ls -ld $(GOBIN)/gscf-linux-* | grep amd64
+	@ls -ld $(GOBIN)/gzmx-linux-* | grep amd64
 
-gscf-linux-arm: gscf-linux-arm-5 gscf-linux-arm-6 gscf-linux-arm-7 gscf-linux-arm64
+gzmx-linux-arm: gzmx-linux-arm-5 gzmx-linux-arm-6 gzmx-linux-arm-7 gzmx-linux-arm64
 	@echo "Linux ARM cross compilation done:"
-	@ls -ld $(GOBIN)/gscf-linux-* | grep arm
+	@ls -ld $(GOBIN)/gzmx-linux-* | grep arm
 
-gscf-linux-arm-5:
-	build/env.sh go run build/ci.go xgo -- --go=$(GO) --targets=linux/arm-5 -v ./cmd/gscf
+gzmx-linux-arm-5:
+	build/env.sh go run build/ci.go xgo -- --go=$(GO) --targets=linux/arm-5 -v ./cmd/gzmx
 	@echo "Linux ARMv5 cross compilation done:"
-	@ls -ld $(GOBIN)/gscf-linux-* | grep arm-5
+	@ls -ld $(GOBIN)/gzmx-linux-* | grep arm-5
 
-gscf-linux-arm-6:
-	build/env.sh go run build/ci.go xgo -- --go=$(GO) --targets=linux/arm-6 -v ./cmd/gscf
+gzmx-linux-arm-6:
+	build/env.sh go run build/ci.go xgo -- --go=$(GO) --targets=linux/arm-6 -v ./cmd/gzmx
 	@echo "Linux ARMv6 cross compilation done:"
-	@ls -ld $(GOBIN)/gscf-linux-* | grep arm-6
+	@ls -ld $(GOBIN)/gzmx-linux-* | grep arm-6
 
-gscf-linux-arm-7:
-	build/env.sh go run build/ci.go xgo -- --go=$(GO) --targets=linux/arm-7 -v ./cmd/gscf
+gzmx-linux-arm-7:
+	build/env.sh go run build/ci.go xgo -- --go=$(GO) --targets=linux/arm-7 -v ./cmd/gzmx
 	@echo "Linux ARMv7 cross compilation done:"
-	@ls -ld $(GOBIN)/gscf-linux-* | grep arm-7
+	@ls -ld $(GOBIN)/gzmx-linux-* | grep arm-7
 
-gscf-linux-arm64:
-	build/env.sh go run build/ci.go xgo -- --go=$(GO) --targets=linux/arm64 -v ./cmd/gscf
+gzmx-linux-arm64:
+	build/env.sh go run build/ci.go xgo -- --go=$(GO) --targets=linux/arm64 -v ./cmd/gzmx
 	@echo "Linux ARM64 cross compilation done:"
-	@ls -ld $(GOBIN)/gscf-linux-* | grep arm64
+	@ls -ld $(GOBIN)/gzmx-linux-* | grep arm64
 
-gscf-linux-mips:
-	build/env.sh go run build/ci.go xgo -- --go=$(GO) --targets=linux/mips --ldflags '-extldflags "-static"' -v ./cmd/gscf
+gzmx-linux-mips:
+	build/env.sh go run build/ci.go xgo -- --go=$(GO) --targets=linux/mips --ldflags '-extldflags "-static"' -v ./cmd/gzmx
 	@echo "Linux MIPS cross compilation done:"
-	@ls -ld $(GOBIN)/gscf-linux-* | grep mips
+	@ls -ld $(GOBIN)/gzmx-linux-* | grep mips
 
-gscf-linux-mipsle:
-	build/env.sh go run build/ci.go xgo -- --go=$(GO) --targets=linux/mipsle --ldflags '-extldflags "-static"' -v ./cmd/gscf
+gzmx-linux-mipsle:
+	build/env.sh go run build/ci.go xgo -- --go=$(GO) --targets=linux/mipsle --ldflags '-extldflags "-static"' -v ./cmd/gzmx
 	@echo "Linux MIPSle cross compilation done:"
-	@ls -ld $(GOBIN)/gscf-linux-* | grep mipsle
+	@ls -ld $(GOBIN)/gzmx-linux-* | grep mipsle
 
-gscf-linux-mips64:
-	build/env.sh go run build/ci.go xgo -- --go=$(GO) --targets=linux/mips64 --ldflags '-extldflags "-static"' -v ./cmd/gscf
+gzmx-linux-mips64:
+	build/env.sh go run build/ci.go xgo -- --go=$(GO) --targets=linux/mips64 --ldflags '-extldflags "-static"' -v ./cmd/gzmx
 	@echo "Linux MIPS64 cross compilation done:"
-	@ls -ld $(GOBIN)/gscf-linux-* | grep mips64
+	@ls -ld $(GOBIN)/gzmx-linux-* | grep mips64
 
-gscf-linux-mips64le:
-	build/env.sh go run build/ci.go xgo -- --go=$(GO) --targets=linux/mips64le --ldflags '-extldflags "-static"' -v ./cmd/gscf
+gzmx-linux-mips64le:
+	build/env.sh go run build/ci.go xgo -- --go=$(GO) --targets=linux/mips64le --ldflags '-extldflags "-static"' -v ./cmd/gzmx
 	@echo "Linux MIPS64le cross compilation done:"
-	@ls -ld $(GOBIN)/gscf-linux-* | grep mips64le
+	@ls -ld $(GOBIN)/gzmx-linux-* | grep mips64le
 
-gscf-darwin: gscf-darwin-386 gscf-darwin-amd64
+gzmx-darwin: gzmx-darwin-386 gzmx-darwin-amd64
 	@echo "Darwin cross compilation done:"
-	@ls -ld $(GOBIN)/gscf-darwin-*
+	@ls -ld $(GOBIN)/gzmx-darwin-*
 
-gscf-darwin-386:
-	build/env.sh go run build/ci.go xgo -- --go=$(GO) --targets=darwin/386 -v ./cmd/gscf
+gzmx-darwin-386:
+	build/env.sh go run build/ci.go xgo -- --go=$(GO) --targets=darwin/386 -v ./cmd/gzmx
 	@echo "Darwin 386 cross compilation done:"
-	@ls -ld $(GOBIN)/gscf-darwin-* | grep 386
+	@ls -ld $(GOBIN)/gzmx-darwin-* | grep 386
 
-gscf-darwin-amd64:
-	build/env.sh go run build/ci.go xgo -- --go=$(GO) --targets=darwin/amd64 -v ./cmd/gscf
+gzmx-darwin-amd64:
+	build/env.sh go run build/ci.go xgo -- --go=$(GO) --targets=darwin/amd64 -v ./cmd/gzmx
 	@echo "Darwin amd64 cross compilation done:"
-	@ls -ld $(GOBIN)/gscf-darwin-* | grep amd64
+	@ls -ld $(GOBIN)/gzmx-darwin-* | grep amd64
 
-gscf-windows: gscf-windows-386 gscf-windows-amd64
+gzmx-windows: gzmx-windows-386 gzmx-windows-amd64
 	@echo "Windows cross compilation done:"
-	@ls -ld $(GOBIN)/gscf-windows-*
+	@ls -ld $(GOBIN)/gzmx-windows-*
 
-gscf-windows-386:
-	build/env.sh go run build/ci.go xgo -- --go=$(GO) --targets=windows/386 -v ./cmd/gscf
+gzmx-windows-386:
+	build/env.sh go run build/ci.go xgo -- --go=$(GO) --targets=windows/386 -v ./cmd/gzmx
 	@echo "Windows 386 cross compilation done:"
-	@ls -ld $(GOBIN)/gscf-windows-* | grep 386
+	@ls -ld $(GOBIN)/gzmx-windows-* | grep 386
 
-gscf-windows-amd64:
-	build/env.sh go run build/ci.go xgo -- --go=$(GO) --targets=windows/amd64 -v ./cmd/gscf
+gzmx-windows-amd64:
+	build/env.sh go run build/ci.go xgo -- --go=$(GO) --targets=windows/amd64 -v ./cmd/gzmx
 	@echo "Windows amd64 cross compilation done:"
-	@ls -ld $(GOBIN)/gscf-windows-* | grep amd64
+	@ls -ld $(GOBIN)/gzmx-windows-* | grep amd64

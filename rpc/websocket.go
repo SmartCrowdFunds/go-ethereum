@@ -27,7 +27,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/SmartCrowdFunds/go-scft/log"
+	"github.com/Zamolxes-ZMX/go-zmx/log"
 	"golang.org/x/net/websocket"
 	"gopkg.in/fatih/set.v0"
 )

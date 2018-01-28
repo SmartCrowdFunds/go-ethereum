@@ -21,7 +21,7 @@ package p2p
 import (
 	"net"
 
-	"github.com/SmartCrowdFunds/go-scft/metrics"
+	"github.com/Zamolxes-ZMX/go-zmx/metrics"
 )
 
 var (

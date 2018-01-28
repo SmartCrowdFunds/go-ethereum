@@ -16,16 +16,16 @@
 
 // Contains all the wrappers from the bind package.
 
-package gscf
+package gzmx
 
 import (
 	"math/big"
 	"strings"
 
-	"github.com/SmartCrowdFunds/go-scft/accounts/abi"
-	"github.com/SmartCrowdFunds/go-scft/accounts/abi/bind"
-	"github.com/SmartCrowdFunds/go-scft/common"
-	"github.com/SmartCrowdFunds/go-scft/core/types"
+	"github.com/Zamolxes-ZMX/go-zmx/accounts/abi"
+	"github.com/Zamolxes-ZMX/go-zmx/accounts/abi/bind"
+	"github.com/Zamolxes-ZMX/go-zmx/common"
+	"github.com/Zamolxes-ZMX/go-zmx/core/types"
 )
 
 // Signer is an interaface defining the callback when a contract requires a

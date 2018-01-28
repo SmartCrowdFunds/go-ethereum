@@ -38191,13 +38191,13 @@ var _bundleJs = []byte((((((((((`!function(modules) {
         }, {
             key: "render",
             value: function() {
-                var _props = this.props, classes = _props.classes, general = _props.general, gscf = general.version ? this.info("Gscf", general.version) : null, commit = general.commit ? this.info("Commit", general.commit.substring(0, 7)) : null;
+                var _props = this.props, classes = _props.classes, general = _props.general, gzmx = general.version ? this.info("gzmx", general.version) : null, commit = general.commit ? this.info("Commit", general.commit.substring(0, 7)) : null;
                 return _react2.default.createElement(_AppBar2.default, {
                     position: "static",
                     className: classes.footer
                 }, _react2.default.createElement(_Toolbar2.default, {
                     className: classes.toolbar
-                }, _react2.default.createElement("div", null, gscf, commit)));
+                }, _react2.default.createElement("div", null, gzmx, commit)));
             }
         } ]), Footer;
     }(_react.Component);

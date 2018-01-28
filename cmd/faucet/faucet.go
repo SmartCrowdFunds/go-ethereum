@@ -41,23 +41,23 @@ import (
 	"sync"
 	"time"
 
-	"github.com/SmartCrowdFunds/go-scft/accounts"
-	"github.com/SmartCrowdFunds/go-scft/accounts/keystore"
-	"github.com/SmartCrowdFunds/go-scft/common"
-	"github.com/SmartCrowdFunds/go-scft/core"
-	"github.com/SmartCrowdFunds/go-scft/core/types"
-	"github.com/SmartCrowdFunds/go-scft/eth"
-	"github.com/SmartCrowdFunds/go-scft/eth/downloader"
-	"github.com/SmartCrowdFunds/go-scft/ethclient"
-	"github.com/SmartCrowdFunds/go-scft/ethstats"
-	"github.com/SmartCrowdFunds/go-scft/les"
-	"github.com/SmartCrowdFunds/go-scft/log"
-	"github.com/SmartCrowdFunds/go-scft/node"
-	"github.com/SmartCrowdFunds/go-scft/p2p"
-	"github.com/SmartCrowdFunds/go-scft/p2p/discover"
-	"github.com/SmartCrowdFunds/go-scft/p2p/discv5"
-	"github.com/SmartCrowdFunds/go-scft/p2p/nat"
-	"github.com/SmartCrowdFunds/go-scft/params"
+	"github.com/Zamolxes-ZMX/go-zmx/accounts"
+	"github.com/Zamolxes-ZMX/go-zmx/accounts/keystore"
+	"github.com/Zamolxes-ZMX/go-zmx/common"
+	"github.com/Zamolxes-ZMX/go-zmx/core"
+	"github.com/Zamolxes-ZMX/go-zmx/core/types"
+	"github.com/Zamolxes-ZMX/go-zmx/eth"
+	"github.com/Zamolxes-ZMX/go-zmx/eth/downloader"
+	"github.com/Zamolxes-ZMX/go-zmx/ethclient"
+	"github.com/Zamolxes-ZMX/go-zmx/ethstats"
+	"github.com/Zamolxes-ZMX/go-zmx/les"
+	"github.com/Zamolxes-ZMX/go-zmx/log"
+	"github.com/Zamolxes-ZMX/go-zmx/node"
+	"github.com/Zamolxes-ZMX/go-zmx/p2p"
+	"github.com/Zamolxes-ZMX/go-zmx/p2p/discover"
+	"github.com/Zamolxes-ZMX/go-zmx/p2p/discv5"
+	"github.com/Zamolxes-ZMX/go-zmx/p2p/nat"
+	"github.com/Zamolxes-ZMX/go-zmx/params"
 	"golang.org/x/net/websocket"
 )
 
@@ -215,7 +215,7 @@ type faucet struct {
 func newFaucet(genesis *core.Genesis, port int, enodes []*discv5.Node, network uint64, stats string, ks *keystore.KeyStore, index []byte) (*faucet, error) {
 	// Assemble the raw devp2p protocol stack
 	stack, err := node.New(&node.Config{
-		Name:    "gscf",
+		Name:    "gzmx",
 		Version: params.Version,
 		DataDir: filepath.Join(os.Getenv("HOME"), ".faucet"),
 		P2P: p2p.Config{
@@ -451,7 +451,7 @@ func (f *faucet) apiHandler(conn *websocket.Conn) {
 		case *noauthFlag:
 			username, avatar, address, err = authNoAuth(msg.URL)
 		default:
-			err = errors.New("Something funky happened, please open an issue at https://github.com/SmartCrowdFunds/go-scft/issues")
+			err = errors.New("Something funky happened, please open an issue at https://github.com/Zamolxes-ZMX/go-zmx/issues")
 		}
 		if err != nil {
 			if err = sendError(conn, err); err != nil {

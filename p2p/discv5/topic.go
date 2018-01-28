@@ -23,8 +23,8 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/SmartCrowdFunds/go-scft/common/mclock"
-	"github.com/SmartCrowdFunds/go-scft/log"
+	"github.com/Zamolxes-ZMX/go-zmx/common/mclock"
+	"github.com/Zamolxes-ZMX/go-zmx/log"
 )
 
 const (

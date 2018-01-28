@@ -23,8 +23,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/SmartCrowdFunds/go-scft/common/math"
-	"github.com/SmartCrowdFunds/go-scft/core/vm"
+	"github.com/Zamolxes-ZMX/go-zmx/common/math"
+	"github.com/Zamolxes-ZMX/go-zmx/core/vm"
 )
 
 // Compiler contains information about the parsed source

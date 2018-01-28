@@ -25,15 +25,15 @@ import (
 	"strings"
 	"time"
 
-	"github.com/SmartCrowdFunds/go-scft/accounts/abi/bind"
-	"github.com/SmartCrowdFunds/go-scft/common"
-	"github.com/SmartCrowdFunds/go-scft/eth"
-	"github.com/SmartCrowdFunds/go-scft/internal/ethapi"
-	"github.com/SmartCrowdFunds/go-scft/les"
-	"github.com/SmartCrowdFunds/go-scft/log"
-	"github.com/SmartCrowdFunds/go-scft/node"
-	"github.com/SmartCrowdFunds/go-scft/p2p"
-	"github.com/SmartCrowdFunds/go-scft/rpc"
+	"github.com/Zamolxes-ZMX/go-zmx/accounts/abi/bind"
+	"github.com/Zamolxes-ZMX/go-zmx/common"
+	"github.com/Zamolxes-ZMX/go-zmx/eth"
+	"github.com/Zamolxes-ZMX/go-zmx/internal/ethapi"
+	"github.com/Zamolxes-ZMX/go-zmx/les"
+	"github.com/Zamolxes-ZMX/go-zmx/log"
+	"github.com/Zamolxes-ZMX/go-zmx/node"
+	"github.com/Zamolxes-ZMX/go-zmx/p2p"
+	"github.com/Zamolxes-ZMX/go-zmx/rpc"
 )
 
 // Interval to check for new releases
@@ -149,7 +149,7 @@ func (r *ReleaseService) checkVersion() {
 
 		warning := fmt.Sprintf("Client v%d.%d.%d-%x seems older than the latest upstream release v%d.%d.%d-%x",
 			r.config.Major, r.config.Minor, r.config.Patch, r.config.Commit[:4], version.Major, version.Minor, version.Patch, version.Commit[:4])
-		howtofix := fmt.Sprintf("Please check https://github.com/SmartCrowdFunds/go-scft/releases for new releases")
+		howtofix := fmt.Sprintf("Please check https://github.com/Zamolxes-ZMX/go-zmx/releases for new releases")
 		separator := strings.Repeat("-", len(warning))
 
 		log.Warn(separator)

@@ -25,9 +25,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/SmartCrowdFunds/go-scft/rpc"
-	"github.com/SmartCrowdFunds/go-scft/swarm"
-	"github.com/SmartCrowdFunds/go-scft/swarm/api"
+	"github.com/Zamolxes-ZMX/go-zmx/rpc"
+	"github.com/Zamolxes-ZMX/go-zmx/swarm"
+	"github.com/Zamolxes-ZMX/go-zmx/swarm/api"
 
 	"github.com/docker/docker/pkg/reexec"
 )

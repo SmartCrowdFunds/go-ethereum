@@ -26,7 +26,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/SmartCrowdFunds/go-scft/rlp"
+	"github.com/Zamolxes-ZMX/go-zmx/rlp"
 )
 
 var (

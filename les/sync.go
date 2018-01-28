@@ -20,9 +20,9 @@ import (
 	"context"
 	"time"
 
-	"github.com/SmartCrowdFunds/go-scft/core"
-	"github.com/SmartCrowdFunds/go-scft/eth/downloader"
-	"github.com/SmartCrowdFunds/go-scft/light"
+	"github.com/Zamolxes-ZMX/go-zmx/core"
+	"github.com/Zamolxes-ZMX/go-zmx/eth/downloader"
+	"github.com/Zamolxes-ZMX/go-zmx/light"
 )
 
 const (

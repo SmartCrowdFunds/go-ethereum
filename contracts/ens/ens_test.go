@@ -20,11 +20,11 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/SmartCrowdFunds/go-scft/accounts/abi/bind"
-	"github.com/SmartCrowdFunds/go-scft/accounts/abi/bind/backends"
-	"github.com/SmartCrowdFunds/go-scft/contracts/ens/contract"
-	"github.com/SmartCrowdFunds/go-scft/core"
-	"github.com/SmartCrowdFunds/go-scft/crypto"
+	"github.com/Zamolxes-ZMX/go-zmx/accounts/abi/bind"
+	"github.com/Zamolxes-ZMX/go-zmx/accounts/abi/bind/backends"
+	"github.com/Zamolxes-ZMX/go-zmx/contracts/ens/contract"
+	"github.com/Zamolxes-ZMX/go-zmx/core"
+	"github.com/Zamolxes-ZMX/go-zmx/crypto"
 )
 
 var (

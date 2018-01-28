@@ -27,7 +27,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/SmartCrowdFunds/go-scft/p2p/discover"
+	"github.com/Zamolxes-ZMX/go-zmx/p2p/discover"
 )
 
 func TestMocker(t *testing.T) {

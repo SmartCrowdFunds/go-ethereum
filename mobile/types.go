@@ -16,16 +16,16 @@
 
 // Contains all the wrappers from the core/types package.
 
-package gscf
+package gzmx
 
 import (
 	"encoding/json"
 	"errors"
 	"fmt"
 
-	"github.com/SmartCrowdFunds/go-scft/common"
-	"github.com/SmartCrowdFunds/go-scft/core/types"
-	"github.com/SmartCrowdFunds/go-scft/rlp"
+	"github.com/Zamolxes-ZMX/go-zmx/common"
+	"github.com/Zamolxes-ZMX/go-zmx/core/types"
+	"github.com/Zamolxes-ZMX/go-zmx/rlp"
 )
 
 // A Nonce is a 64-bit hash which proves (combined with the mix-hash) that

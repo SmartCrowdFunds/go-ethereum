@@ -37,12 +37,12 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/SmartCrowdFunds/go-scft/contracts/chequebook"
-	"github.com/SmartCrowdFunds/go-scft/log"
-	"github.com/SmartCrowdFunds/go-scft/p2p"
-	bzzswap "github.com/SmartCrowdFunds/go-scft/swarm/services/swap"
-	"github.com/SmartCrowdFunds/go-scft/swarm/services/swap/swap"
-	"github.com/SmartCrowdFunds/go-scft/swarm/storage"
+	"github.com/Zamolxes-ZMX/go-zmx/contracts/chequebook"
+	"github.com/Zamolxes-ZMX/go-zmx/log"
+	"github.com/Zamolxes-ZMX/go-zmx/p2p"
+	bzzswap "github.com/Zamolxes-ZMX/go-zmx/swarm/services/swap"
+	"github.com/Zamolxes-ZMX/go-zmx/swarm/services/swap/swap"
+	"github.com/Zamolxes-ZMX/go-zmx/swarm/storage"
 )
 
 const (

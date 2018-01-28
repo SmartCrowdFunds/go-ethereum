@@ -80,7 +80,7 @@ run_image() {
     --rm \
     --hostname "${name}" \
     --name     "${name}" \
-    --volume   "${ROOT}:/go/src/github.com/SmartCrowdFunds/go-scft" \
+    --volume   "${ROOT}:/go/src/github.com/Zamolxes-ZMX/go-zmx" \
     --volume   "/var/run/docker.sock:/var/run/docker.sock" \
     ${docker_args} \
     "${name}" \

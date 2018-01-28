@@ -16,13 +16,13 @@
 
 // Contains perverted wrappers to allow crossing over empty interfaces.
 
-package gscf
+package gzmx
 
 import (
 	"errors"
 	"math/big"
 
-	"github.com/SmartCrowdFunds/go-scft/common"
+	"github.com/Zamolxes-ZMX/go-zmx/common"
 )
 
 // Interface represents a wrapped version of Go's interface{}, with the capacity

@@ -16,7 +16,7 @@
 
 package core
 
-import "github.com/SmartCrowdFunds/go-scft/common"
+import "github.com/Zamolxes-ZMX/go-zmx/common"
 
 // BadHashes represent a set of manually tracked bad hashes (usually hard forks)
 var BadHashes = map[common.Hash]bool{

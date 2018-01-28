@@ -58,23 +58,23 @@ import (
 	"strings"
 	"time"
 
-	"github.com/SmartCrowdFunds/go-scft/internal/build"
+	"github.com/Zamolxes-ZMX/go-zmx/internal/build"
 )
 
 var (
-	// Files that end up in the gscf*.zip archive.
-	gscfArchiveFiles = []string{
+	// Files that end up in the gzmx*.zip archive.
+	gzmxArchiveFiles = []string{
 		"COPYING",
-		executablePath("gscf"),
+		executablePath("gzmx"),
 	}
 
-	// Files that end up in the gscf-alltools*.zip archive.
+	// Files that end up in the gzmx-alltools*.zip archive.
 	allToolsArchiveFiles = []string{
 		"COPYING",
 		executablePath("abigen"),
 		executablePath("bootnode"),
 		executablePath("evm"),
-		executablePath("gscf"),
+		executablePath("gzmx"),
 		executablePath("puppeth"),
 		executablePath("rlpdump"),
 		executablePath("swarm"),
@@ -96,7 +96,7 @@ var (
 			Description: "Developer utility version of the EVM (Ethereum Virtual Machine) that is capable of running bytecode snippets within a configurable environment and execution mode.",
 		},
 		{
-			Name:        "gscf",
+			Name:        "gzmx",
 			Description: "Ethereum CLI client.",
 		},
 		{
@@ -335,7 +335,7 @@ func doLint(cmdline []string) {
 	build.MustRun(goTool("get", "gopkg.in/alecthomas/gometalinter.v2"))
 	build.MustRunCommand(filepath.Join(GOBIN, "gometalinter.v2"), "--install")
 
-	// Run fast linters batched togscfer
+	// Run fast linters batched togzmxer
 	configs := []string{
 		"--vendor",
 		"--disable-all",
@@ -361,7 +361,7 @@ func doArchive(cmdline []string) {
 		arch   = flag.String("arch", runtime.GOARCH, "Architecture cross packaging")
 		atype  = flag.String("type", "zip", "Type of archive to write (zip|tar)")
 		signer = flag.String("signer", "", `Environment variable holding the signing key (e.g. LINUX_SIGNING_KEY)`)
-		upload = flag.String("upload", "", `Destination to upload the archives (usually "gscfstore/builds")`)
+		upload = flag.String("upload", "", `Destination to upload the archives (usually "gzmxstore/builds")`)
 		ext    string
 	)
 	flag.CommandLine.Parse(cmdline)
@@ -377,17 +377,17 @@ func doArchive(cmdline []string) {
 	var (
 		env      = build.Env()
 		base     = archiveBasename(*arch, env)
-		gscf     = "gscf-" + base + ext
-		alltools = "gscf-alltools-" + base + ext
+		gzmx     = "gzmx-" + base + ext
+		alltools = "gzmx-alltools-" + base + ext
 	)
 	maybeSkipArchive(env)
-	if err := build.WriteArchive(gscf, gscfArchiveFiles); err != nil {
+	if err := build.WriteArchive(gzmx, gzmxArchiveFiles); err != nil {
 		log.Fatal(err)
 	}
 	if err := build.WriteArchive(alltools, allToolsArchiveFiles); err != nil {
 		log.Fatal(err)
 	}
-	for _, archive := range []string{gscf, alltools} {
+	for _, archive := range []string{gzmx, alltools} {
 		if err := archiveUpload(archive, *upload, *signer); err != nil {
 			log.Fatal(err)
 		}
@@ -514,7 +514,7 @@ func makeWorkdir(wdflag string) string {
 	if wdflag != "" {
 		err = os.MkdirAll(wdflag, 0744)
 	} else {
-		wdflag, err = ioutil.TempDir("", "gscf-build-")
+		wdflag, err = ioutil.TempDir("", "gzmx-build-")
 	}
 	if err != nil {
 		log.Fatal(err)
@@ -651,7 +651,7 @@ func doWindowsInstaller(cmdline []string) {
 	var (
 		arch    = flag.String("arch", runtime.GOARCH, "Architecture for cross build packaging")
 		signer  = flag.String("signer", "", `Environment variable holding the signing key (e.g. WINDOWS_SIGNING_KEY)`)
-		upload  = flag.String("upload", "", `Destination to upload the archives (usually "gscfstore/builds")`)
+		upload  = flag.String("upload", "", `Destination to upload the archives (usually "gzmxstore/builds")`)
 		workdir = flag.String("workdir", "", `Output directory for packages (uses temp dir if unset)`)
 	)
 	flag.CommandLine.Parse(cmdline)
@@ -663,28 +663,28 @@ func doWindowsInstaller(cmdline []string) {
 	var (
 		devTools []string
 		allTools []string
-		gscfTool string
+		gzmxTool string
 	)
 	for _, file := range allToolsArchiveFiles {
 		if file == "COPYING" { // license, copied later
 			continue
 		}
 		allTools = append(allTools, filepath.Base(file))
-		if filepath.Base(file) == "gscf.exe" {
-			gscfTool = file
+		if filepath.Base(file) == "gzmx.exe" {
+			gzmxTool = file
 		} else {
 			devTools = append(devTools, file)
 		}
 	}
 
 	// Render NSIS scripts: Installer NSIS contains two installer sections,
-	// first section contains the gscf binary, second section holds the dev tools.
+	// first section contains the gzmx binary, second section holds the dev tools.
 	templateData := map[string]interface{}{
 		"License":  "COPYING",
-		"Gscf":     gscfTool,
+		"gzmx":     gzmxTool,
 		"DevTools": devTools,
 	}
-	build.Render("build/nsis.gscf.nsi", filepath.Join(*workdir, "gscf.nsi"), 0644, nil)
+	build.Render("build/nsis.gzmx.nsi", filepath.Join(*workdir, "gzmx.nsi"), 0644, nil)
 	build.Render("build/nsis.install.nsh", filepath.Join(*workdir, "install.nsh"), 0644, templateData)
 	build.Render("build/nsis.uninstall.nsh", filepath.Join(*workdir, "uninstall.nsh"), 0644, allTools)
 	build.Render("build/nsis.pathupdate.nsh", filepath.Join(*workdir, "PathUpdate.nsh"), 0644, nil)
@@ -699,14 +699,14 @@ func doWindowsInstaller(cmdline []string) {
 	if env.Commit != "" {
 		version[2] += "-" + env.Commit[:8]
 	}
-	installer, _ := filepath.Abs("gscf-" + archiveBasename(*arch, env) + ".exe")
+	installer, _ := filepath.Abs("gzmx-" + archiveBasename(*arch, env) + ".exe")
 	build.MustRunCommand("makensis.exe",
 		"/DOUTPUTFILE="+installer,
 		"/DMAJORVERSION="+version[0],
 		"/DMINORVERSION="+version[1],
 		"/DBUILDVERSION="+version[2],
 		"/DARCH="+*arch,
-		filepath.Join(*workdir, "gscf.nsi"),
+		filepath.Join(*workdir, "gzmx.nsi"),
 	)
 
 	// Sign and publish installer.
@@ -722,7 +722,7 @@ func doAndroidArchive(cmdline []string) {
 		local  = flag.Bool("local", false, `Flag whether we're only doing a local build (skip Maven artifacts)`)
 		signer = flag.String("signer", "", `Environment variable holding the signing key (e.g. ANDROID_SIGNING_KEY)`)
 		deploy = flag.String("deploy", "", `Destination to deploy the archive (usually "https://oss.sonatype.org")`)
-		upload = flag.String("upload", "", `Destination to upload the archive (usually "gscfstore/builds")`)
+		upload = flag.String("upload", "", `Destination to upload the archive (usually "gzmxstore/builds")`)
 	)
 	flag.CommandLine.Parse(cmdline)
 	env := build.Env()
@@ -737,11 +737,11 @@ func doAndroidArchive(cmdline []string) {
 	// Build the Android archive and Maven resources
 	build.MustRun(goTool("get", "golang.org/x/mobile/cmd/gomobile"))
 	build.MustRun(gomobileTool("init", "--ndk", os.Getenv("ANDROID_NDK")))
-	build.MustRun(gomobileTool("bind", "--target", "android", "--javapkg", "org.ethereum", "-v", "github.com/SmartCrowdFunds/go-scft/mobile"))
+	build.MustRun(gomobileTool("bind", "--target", "android", "--javapkg", "org.ethereum", "-v", "github.com/Zamolxes-ZMX/go-zmx/mobile"))
 
 	if *local {
 		// If we're building locally, copy bundle to build dir and skip Maven
-		os.Rename("gscf.aar", filepath.Join(GOBIN, "gscf.aar"))
+		os.Rename("gzmx.aar", filepath.Join(GOBIN, "gzmx.aar"))
 		return
 	}
 	meta := newMavenMetadata(env)
@@ -751,8 +751,8 @@ func doAndroidArchive(cmdline []string) {
 	maybeSkipArchive(env)
 
 	// Sign and upload the archive to Azure
-	archive := "gscf-" + archiveBasename("android", env) + ".aar"
-	os.Rename("gscf.aar", archive)
+	archive := "gzmx-" + archiveBasename("android", env) + ".aar"
+	os.Rename("gzmx.aar", archive)
 
 	if err := archiveUpload(archive, *upload, *signer); err != nil {
 		log.Fatal(err)
@@ -836,7 +836,7 @@ func newMavenMetadata(env build.Environment) mavenMetadata {
 	}
 	return mavenMetadata{
 		Version:      version,
-		Package:      "gscf-" + version,
+		Package:      "gzmx-" + version,
 		Develop:      isUnstableBuild(env),
 		Contributors: contribs,
 	}
@@ -849,7 +849,7 @@ func doXCodeFramework(cmdline []string) {
 		local  = flag.Bool("local", false, `Flag whether we're only doing a local build (skip Maven artifacts)`)
 		signer = flag.String("signer", "", `Environment variable holding the signing key (e.g. IOS_SIGNING_KEY)`)
 		deploy = flag.String("deploy", "", `Destination to deploy the archive (usually "trunk")`)
-		upload = flag.String("upload", "", `Destination to upload the archives (usually "gscfstore/builds")`)
+		upload = flag.String("upload", "", `Destination to upload the archives (usually "gzmxstore/builds")`)
 	)
 	flag.CommandLine.Parse(cmdline)
 	env := build.Env()
@@ -857,7 +857,7 @@ func doXCodeFramework(cmdline []string) {
 	// Build the iOS XCode framework
 	build.MustRun(goTool("get", "golang.org/x/mobile/cmd/gomobile"))
 	build.MustRun(gomobileTool("init"))
-	bind := gomobileTool("bind", "--target", "ios", "--tags", "ios", "-v", "github.com/SmartCrowdFunds/go-scft/mobile")
+	bind := gomobileTool("bind", "--target", "ios", "--tags", "ios", "-v", "github.com/Zamolxes-ZMX/go-zmx/mobile")
 
 	if *local {
 		// If we're building locally, use the build folder and stop afterwards
@@ -865,7 +865,7 @@ func doXCodeFramework(cmdline []string) {
 		build.MustRun(bind)
 		return
 	}
-	archive := "gscf-" + archiveBasename("ios", env)
+	archive := "gzmx-" + archiveBasename("ios", env)
 	if err := os.Mkdir(archive, os.ModePerm); err != nil {
 		log.Fatal(err)
 	}
@@ -883,8 +883,8 @@ func doXCodeFramework(cmdline []string) {
 	// Prepare and upload a PodSpec to CocoaPods
 	if *deploy != "" {
 		meta := newPodMetadata(env, archive)
-		build.Render("build/pod.podspec", "Gscf.podspec", 0755, meta)
-		build.MustRunCommand("pod", *deploy, "push", "Gscf.podspec", "--allow-warnings", "--verbose")
+		build.Render("build/pod.podspec", "gzmx.podspec", 0755, meta)
+		build.MustRunCommand("pod", *deploy, "push", "gzmx.podspec", "--allow-warnings", "--verbose")
 	}
 }
 
@@ -989,7 +989,7 @@ func xgoTool(args []string) *exec.Cmd {
 
 func doPurge(cmdline []string) {
 	var (
-		store = flag.String("store", "", `Destination from where to purge archives (usually "gscfstore/builds")`)
+		store = flag.String("store", "", `Destination from where to purge archives (usually "gzmxstore/builds")`)
 		limit = flag.Int("days", 30, `Age threshold above which to delete unstalbe archives`)
 	)
 	flag.CommandLine.Parse(cmdline)

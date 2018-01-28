@@ -19,7 +19,7 @@ package event_test
 import (
 	"fmt"
 
-	"github.com/SmartCrowdFunds/go-scft/event"
+	"github.com/Zamolxes-ZMX/go-zmx/event"
 )
 
 func ExampleNewSubscription() {

@@ -24,7 +24,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/SmartCrowdFunds/go-scft/common"
+	"github.com/Zamolxes-ZMX/go-zmx/common"
 	"golang.org/x/crypto/pbkdf2"
 )
 

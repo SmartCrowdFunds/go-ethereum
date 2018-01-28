@@ -22,13 +22,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/SmartCrowdFunds/go-scft/common"
-	"github.com/SmartCrowdFunds/go-scft/common/mclock"
-	"github.com/SmartCrowdFunds/go-scft/consensus"
-	"github.com/SmartCrowdFunds/go-scft/core"
-	"github.com/SmartCrowdFunds/go-scft/core/types"
-	"github.com/SmartCrowdFunds/go-scft/light"
-	"github.com/SmartCrowdFunds/go-scft/log"
+	"github.com/Zamolxes-ZMX/go-zmx/common"
+	"github.com/Zamolxes-ZMX/go-zmx/common/mclock"
+	"github.com/Zamolxes-ZMX/go-zmx/consensus"
+	"github.com/Zamolxes-ZMX/go-zmx/core"
+	"github.com/Zamolxes-ZMX/go-zmx/core/types"
+	"github.com/Zamolxes-ZMX/go-zmx/light"
+	"github.com/Zamolxes-ZMX/go-zmx/log"
 )
 
 const (
@@ -702,7 +702,7 @@ type updateStatsEntry struct {
 }
 
 // updateMaxConfirmedTd updates the block delay statistics of active peers. Whenever a new highest Td is confirmed,
-// adds it to the end of a linked list togscfer with the time it has been confirmed. Then checks which peers have
+// adds it to the end of a linked list togzmxer with the time it has been confirmed. Then checks which peers have
 // already confirmed a head with the same or higher Td (which counts as zero block delay) and updates their statistics.
 // Those who have not confirmed such a head by now will be updated by a subsequent checkUpdateStats call with a
 // positive block delay value.

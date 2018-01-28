@@ -42,7 +42,7 @@ import (
 	"fmt"
 	"hash"
 
-	ethcrypto "github.com/SmartCrowdFunds/go-scft/crypto"
+	ethcrypto "github.com/Zamolxes-ZMX/go-zmx/crypto"
 )
 
 var (

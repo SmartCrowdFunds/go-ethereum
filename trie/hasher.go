@@ -21,9 +21,9 @@ import (
 	"hash"
 	"sync"
 
-	"github.com/SmartCrowdFunds/go-scft/common"
-	"github.com/SmartCrowdFunds/go-scft/crypto/sha3"
-	"github.com/SmartCrowdFunds/go-scft/rlp"
+	"github.com/Zamolxes-ZMX/go-zmx/common"
+	"github.com/Zamolxes-ZMX/go-zmx/crypto/sha3"
+	"github.com/Zamolxes-ZMX/go-zmx/rlp"
 )
 
 type hasher struct {

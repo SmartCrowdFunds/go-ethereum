@@ -19,7 +19,7 @@ package vm
 import (
 	"fmt"
 
-	"github.com/SmartCrowdFunds/go-scft/params"
+	"github.com/Zamolxes-ZMX/go-zmx/params"
 )
 
 func makeStackFunc(pop, push int) stackValidationFunc {

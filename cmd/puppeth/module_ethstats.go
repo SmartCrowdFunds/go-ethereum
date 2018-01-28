@@ -25,7 +25,7 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/SmartCrowdFunds/go-scft/log"
+	"github.com/Zamolxes-ZMX/go-zmx/log"
 )
 
 // ethstatsDockerfile is the Dockerfile required to build an ethstats backend

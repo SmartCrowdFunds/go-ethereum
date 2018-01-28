@@ -61,14 +61,14 @@ class Footer extends Component<Props> {
 
 	render() {
 		const {classes, general} = this.props; // The classes property is injected by withStyles().
-		const gscf = general.version ? this.info('Gscf', general.version) : null;
+		const gzmx = general.version ? this.info('gzmx', general.version) : null;
 		const commit = general.commit ? this.info('Commit', general.commit.substring(0, 7)) : null;
 
 		return (
 			<AppBar position="static" className={classes.footer}>
 				<Toolbar className={classes.toolbar}>
 					<div>
-						{gscf}
+						{gzmx}
 						{commit}
 					</div>
 				</Toolbar>

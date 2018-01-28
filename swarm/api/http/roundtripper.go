@@ -20,17 +20,17 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/SmartCrowdFunds/go-scft/log"
+	"github.com/Zamolxes-ZMX/go-zmx/log"
 )
 
 /*
 http roundtripper to register for bzz url scheme
-see https://github.com/SmartCrowdFunds/go-scft/issues/2040
+see https://github.com/Zamolxes-ZMX/go-zmx/issues/2040
 Usage:
 
 import (
- "github.com/SmartCrowdFunds/go-scft/common/httpclient"
- "github.com/SmartCrowdFunds/go-scft/swarm/api/http"
+ "github.com/Zamolxes-ZMX/go-zmx/common/httpclient"
+ "github.com/Zamolxes-ZMX/go-zmx/swarm/api/http"
 )
 client := httpclient.New()
 // for (private) swarm proxy running locally

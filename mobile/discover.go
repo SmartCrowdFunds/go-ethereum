@@ -17,12 +17,12 @@
 // Contains all the wrappers from the accounts package to support client side enode
 // management on mobile platforms.
 
-package gscf
+package gzmx
 
 import (
 	"errors"
 
-	"github.com/SmartCrowdFunds/go-scft/p2p/discv5"
+	"github.com/Zamolxes-ZMX/go-zmx/p2p/discv5"
 )
 
 // Enode represents a host on the network.

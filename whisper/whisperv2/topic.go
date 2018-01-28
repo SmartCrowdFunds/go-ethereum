@@ -19,7 +19,7 @@
 
 package whisperv2
 
-import "github.com/SmartCrowdFunds/go-scft/crypto"
+import "github.com/Zamolxes-ZMX/go-zmx/crypto"
 
 // Topic represents a cryptographically secure, probabilistic partial
 // classifications of a message, determined as the first (left) 4 bytes of the

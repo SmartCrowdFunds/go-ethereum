@@ -19,7 +19,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/SmartCrowdFunds/go-scft/log"
+	"github.com/Zamolxes-ZMX/go-zmx/log"
 )
 
 // deployDashboard queries the user for various input on deploying a web-service

@@ -24,8 +24,8 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/SmartCrowdFunds/go-scft/crypto"
-	"github.com/SmartCrowdFunds/go-scft/p2p"
+	"github.com/Zamolxes-ZMX/go-zmx/crypto"
+	"github.com/Zamolxes-ZMX/go-zmx/p2p"
 )
 
 // Tests that datadirs can be successfully created, be them manually configured
@@ -73,15 +73,15 @@ func TestIPCPathResolution(t *testing.T) {
 	}{
 		{"", "", false, ""},
 		{"data", "", false, ""},
-		{"", "gscf.ipc", false, filepath.Join(os.TempDir(), "gscf.ipc")},
-		{"data", "gscf.ipc", false, "data/gscf.ipc"},
-		{"data", "./gscf.ipc", false, "./gscf.ipc"},
-		{"data", "/gscf.ipc", false, "/gscf.ipc"},
+		{"", "gzmx.ipc", false, filepath.Join(os.TempDir(), "gzmx.ipc")},
+		{"data", "gzmx.ipc", false, "data/gzmx.ipc"},
+		{"data", "./gzmx.ipc", false, "./gzmx.ipc"},
+		{"data", "/gzmx.ipc", false, "/gzmx.ipc"},
 		{"", "", true, ``},
 		{"data", "", true, ``},
-		{"", "gscf.ipc", true, `\\.\pipe\gscf.ipc`},
-		{"data", "gscf.ipc", true, `\\.\pipe\gscf.ipc`},
-		{"data", `\\.\pipe\gscf.ipc`, true, `\\.\pipe\gscf.ipc`},
+		{"", "gzmx.ipc", true, `\\.\pipe\gzmx.ipc`},
+		{"data", "gzmx.ipc", true, `\\.\pipe\gzmx.ipc`},
+		{"data", `\\.\pipe\gzmx.ipc`, true, `\\.\pipe\gzmx.ipc`},
 	}
 	for i, test := range tests {
 		// Only run when platform/test match

@@ -26,8 +26,8 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/SmartCrowdFunds/go-scft/common"
-	"github.com/SmartCrowdFunds/go-scft/internal/jsre/deps"
+	"github.com/Zamolxes-ZMX/go-zmx/common"
+	"github.com/Zamolxes-ZMX/go-zmx/internal/jsre/deps"
 	"github.com/robertkrimen/otto"
 )
 

@@ -27,12 +27,12 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/SmartCrowdFunds/go-scft/common"
-	"github.com/SmartCrowdFunds/go-scft/crypto"
+	"github.com/Zamolxes-ZMX/go-zmx/common"
+	"github.com/Zamolxes-ZMX/go-zmx/crypto"
 )
 
 func tmpKeyStoreIface(t *testing.T, encrypted bool) (dir string, ks keyStore) {
-	d, err := ioutil.TempDir("", "gscf-keystore-test")
+	d, err := ioutil.TempDir("", "gzmx-keystore-test")
 	if err != nil {
 		t.Fatal(err)
 	}

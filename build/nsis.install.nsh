@@ -1,41 +1,41 @@
-Name "gscf ${MAJORVERSION}.${MINORVERSION}.${BUILDVERSION}" # VERSION variables set through command line arguments
+Name "gzmx ${MAJORVERSION}.${MINORVERSION}.${BUILDVERSION}" # VERSION variables set through command line arguments
 InstallDir "$InstDir"
 OutFile "${OUTPUTFILE}" # set through command line arguments
 
 # Links for "Add/Remove Programs"
-!define HELPURL "https://github.com/SmartCrowdFunds/go-scft/issues"
-!define UPDATEURL "https://github.com/SmartCrowdFunds/go-scft/releases"
-!define ABOUTURL "https://github.com/SmartCrowdFunds/go-scft#ethereum-go"
+!define HELPURL "https://github.com/Zamolxes-ZMX/go-zmx/issues"
+!define UPDATEURL "https://github.com/Zamolxes-ZMX/go-zmx/releases"
+!define ABOUTURL "https://github.com/Zamolxes-ZMX/go-zmx#ethereum-go"
 !define /date NOW "%Y%m%d"
 
 PageEx license
   LicenseData {{.License}}
 PageExEnd
 
-# Install gscf binary
-Section "Gscf" GSCF_IDX
+# Install gzmx binary
+Section "gzmx" gzmx_IDX
   SetOutPath $INSTDIR
-  file {{.Gscf}}
+  file {{.gzmx}}
 
   # Create start menu launcher
   createDirectory "$SMPROGRAMS\${APPNAME}"
-  createShortCut "$SMPROGRAMS\${APPNAME}\${APPNAME}.lnk" "$INSTDIR\gscf.exe" "--fast" "--cache=512"
-  createShortCut "$SMPROGRAMS\${APPNAME}\Attach.lnk" "$INSTDIR\gscf.exe" "attach" "" ""
+  createShortCut "$SMPROGRAMS\${APPNAME}\${APPNAME}.lnk" "$INSTDIR\gzmx.exe" "--fast" "--cache=512"
+  createShortCut "$SMPROGRAMS\${APPNAME}\Attach.lnk" "$INSTDIR\gzmx.exe" "attach" "" ""
   createShortCut "$SMPROGRAMS\${APPNAME}\Uninstall.lnk" "$INSTDIR\uninstall.exe" "" "" ""
 
   # Firewall - remove rules (if exists)
-  SimpleFC::AdvRemoveRule "Gscf incoming peers (TCP:30303)"
-  SimpleFC::AdvRemoveRule "Gscf outgoing peers (TCP:30303)"
-  SimpleFC::AdvRemoveRule "Gscf UDP discovery (UDP:30303)"
+  SimpleFC::AdvRemoveRule "gzmx incoming peers (TCP:30303)"
+  SimpleFC::AdvRemoveRule "gzmx outgoing peers (TCP:30303)"
+  SimpleFC::AdvRemoveRule "gzmx UDP discovery (UDP:30303)"
 
   # Firewall - add rules
-  SimpleFC::AdvAddRule "Gscf incoming peers (TCP:30303)" ""  6 1 1 2147483647 1 "$INSTDIR\gscf.exe" "" "" "Ethereum" 30303 "" "" ""
-  SimpleFC::AdvAddRule "Gscf outgoing peers (TCP:30303)" ""  6 2 1 2147483647 1 "$INSTDIR\gscf.exe" "" "" "Ethereum" "" 30303 "" ""
-  SimpleFC::AdvAddRule "Gscf UDP discovery (UDP:30303)" "" 17 2 1 2147483647 1 "$INSTDIR\gscf.exe" "" "" "Ethereum" "" 30303 "" ""
+  SimpleFC::AdvAddRule "gzmx incoming peers (TCP:30303)" ""  6 1 1 2147483647 1 "$INSTDIR\gzmx.exe" "" "" "Ethereum" 30303 "" "" ""
+  SimpleFC::AdvAddRule "gzmx outgoing peers (TCP:30303)" ""  6 2 1 2147483647 1 "$INSTDIR\gzmx.exe" "" "" "Ethereum" "" 30303 "" ""
+  SimpleFC::AdvAddRule "gzmx UDP discovery (UDP:30303)" "" 17 2 1 2147483647 1 "$INSTDIR\gzmx.exe" "" "" "Ethereum" "" 30303 "" ""
 
   # Set default IPC endpoint (https://github.com/SmartCrowdFunds/EIPs/issues/147)
-  ${EnvVarUpdate} $0 "ETHEREUM_SOCKET" "R" "HKLM" "\\.\pipe\gscf.ipc"
-  ${EnvVarUpdate} $0 "ETHEREUM_SOCKET" "A" "HKLM" "\\.\pipe\gscf.ipc"
+  ${EnvVarUpdate} $0 "ETHEREUM_SOCKET" "R" "HKLM" "\\.\pipe\gzmx.ipc"
+  ${EnvVarUpdate} $0 "ETHEREUM_SOCKET" "A" "HKLM" "\\.\pipe\gzmx.ipc"
 
   # Add instdir to PATH
   Push "$INSTDIR"
@@ -54,8 +54,8 @@ Var GetInstalledSize.total
 Function GetInstalledSize
   StrCpy $GetInstalledSize.total 0
 
-  ${if} ${SectionIsSelected} ${GSCF_IDX}
-    SectionGetSize ${GSCF_IDX} $0
+  ${if} ${SectionIsSelected} ${gzmx_IDX}
+    SectionGetSize ${gzmx_IDX} $0
     IntOp $GetInstalledSize.total $GetInstalledSize.total + $0
   ${endif}
 

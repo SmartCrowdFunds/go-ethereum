@@ -17,12 +17,12 @@ Section "Uninstall"
   rmDir "$SMPROGRAMS\${APPNAME}"
 
   # Firewall - remove rules if exists
-  SimpleFC::AdvRemoveRule "Gscf incoming peers (TCP:30303)"
-  SimpleFC::AdvRemoveRule "Gscf outgoing peers (TCP:30303)"
-  SimpleFC::AdvRemoveRule "Gscf UDP discovery (UDP:30303)"
+  SimpleFC::AdvRemoveRule "gzmx incoming peers (TCP:30303)"
+  SimpleFC::AdvRemoveRule "gzmx outgoing peers (TCP:30303)"
+  SimpleFC::AdvRemoveRule "gzmx UDP discovery (UDP:30303)"
 
   # Remove IPC endpoint (https://github.com/SmartCrowdFunds/EIPs/issues/147)
-  ${un.EnvVarUpdate} $0 "ETHEREUM_SOCKET" "R" "HKLM" "\\.\pipe\gscf.ipc"
+  ${un.EnvVarUpdate} $0 "ETHEREUM_SOCKET" "R" "HKLM" "\\.\pipe\gzmx.ipc"
 
   # Remove install directory from PATH
   Push "$INSTDIR"

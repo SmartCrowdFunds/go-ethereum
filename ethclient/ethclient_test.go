@@ -16,7 +16,7 @@
 
 package ethclient
 
-import "github.com/SmartCrowdFunds/go-scft"
+import "github.com/Zamolxes-ZMX/go-zmx"
 
 // Verify that Client implements the ethereum interfaces.
 var (

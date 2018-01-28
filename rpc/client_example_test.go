@@ -22,7 +22,7 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/SmartCrowdFunds/go-scft/rpc"
+	"github.com/Zamolxes-ZMX/go-zmx/rpc"
 )
 
 // In this example, our client whishes to track the latest 'block number'

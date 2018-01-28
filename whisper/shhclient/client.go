@@ -19,10 +19,10 @@ package shhclient
 import (
 	"context"
 
-	"github.com/SmartCrowdFunds/go-scft"
-	"github.com/SmartCrowdFunds/go-scft/common/hexutil"
-	"github.com/SmartCrowdFunds/go-scft/rpc"
-	whisper "github.com/SmartCrowdFunds/go-scft/whisper/whisperv5"
+	"github.com/Zamolxes-ZMX/go-zmx"
+	"github.com/Zamolxes-ZMX/go-zmx/common/hexutil"
+	"github.com/Zamolxes-ZMX/go-zmx/rpc"
+	whisper "github.com/Zamolxes-ZMX/go-zmx/whisper/whisperv5"
 )
 
 // Client defines typed wrappers for the Whisper v5 RPC API.

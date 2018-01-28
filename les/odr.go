@@ -19,10 +19,10 @@ package les
 import (
 	"context"
 
-	"github.com/SmartCrowdFunds/go-scft/core"
-	"github.com/SmartCrowdFunds/go-scft/ethdb"
-	"github.com/SmartCrowdFunds/go-scft/light"
-	"github.com/SmartCrowdFunds/go-scft/log"
+	"github.com/Zamolxes-ZMX/go-zmx/core"
+	"github.com/Zamolxes-ZMX/go-zmx/ethdb"
+	"github.com/Zamolxes-ZMX/go-zmx/light"
+	"github.com/Zamolxes-ZMX/go-zmx/log"
 )
 
 // LesOdr implements light.OdrBackend

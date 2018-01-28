@@ -22,9 +22,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/SmartCrowdFunds/go-scft/swarm/api"
-	httpapi "github.com/SmartCrowdFunds/go-scft/swarm/api/http"
-	"github.com/SmartCrowdFunds/go-scft/swarm/storage"
+	"github.com/Zamolxes-ZMX/go-zmx/swarm/api"
+	httpapi "github.com/Zamolxes-ZMX/go-zmx/swarm/api/http"
+	"github.com/Zamolxes-ZMX/go-zmx/swarm/storage"
 )
 
 func NewTestSwarmServer(t *testing.T) *TestSwarmServer {

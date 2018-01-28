@@ -14,7 +14,7 @@
 // You should have received a copy of the GNU Lesser General Public License
 // along with the go-scft library. If not, see <http://www.gnu.org/licenses/>.
 
-// package web3ext contains gscf specific web3.js extensions.
+// package web3ext contains gzmx specific web3.js extensions.
 package web3ext
 
 var Modules = map[string]string{

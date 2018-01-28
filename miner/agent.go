@@ -21,8 +21,8 @@ import (
 
 	"sync/atomic"
 
-	"github.com/SmartCrowdFunds/go-scft/consensus"
-	"github.com/SmartCrowdFunds/go-scft/log"
+	"github.com/Zamolxes-ZMX/go-zmx/consensus"
+	"github.com/Zamolxes-ZMX/go-zmx/log"
 )
 
 type CpuAgent struct {

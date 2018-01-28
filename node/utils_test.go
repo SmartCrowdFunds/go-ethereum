@@ -22,8 +22,8 @@ package node
 import (
 	"reflect"
 
-	"github.com/SmartCrowdFunds/go-scft/p2p"
-	"github.com/SmartCrowdFunds/go-scft/rpc"
+	"github.com/Zamolxes-ZMX/go-zmx/p2p"
+	"github.com/Zamolxes-ZMX/go-zmx/rpc"
 )
 
 // NoopService is a trivial implementation of the Service interface.

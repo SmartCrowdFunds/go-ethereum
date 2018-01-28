@@ -16,13 +16,13 @@
 
 // Contains all the wrappers from the math/big package.
 
-package gscf
+package gzmx
 
 import (
 	"errors"
 	"math/big"
 
-	"github.com/SmartCrowdFunds/go-scft/common"
+	"github.com/Zamolxes-ZMX/go-zmx/common"
 )
 
 // A BigInt represents a signed multi-precision integer.

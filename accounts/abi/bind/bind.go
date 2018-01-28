@@ -17,7 +17,7 @@
 // Package bind generates Ethereum contract Go bindings.
 //
 // Detailed usage document and tutorial available on the go-scft Wiki page:
-// https://github.com/SmartCrowdFunds/go-scft/wiki/Native-DApps:-Go-bindings-to-Ethereum-contracts
+// https://github.com/Zamolxes-ZMX/go-zmx/wiki/Native-DApps:-Go-bindings-to-Ethereum-contracts
 package bind
 
 import (
@@ -28,7 +28,7 @@ import (
 	"text/template"
 	"unicode"
 
-	"github.com/SmartCrowdFunds/go-scft/accounts/abi"
+	"github.com/Zamolxes-ZMX/go-zmx/accounts/abi"
 	"golang.org/x/tools/imports"
 )
 
